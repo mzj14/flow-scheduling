@@ -5,6 +5,7 @@ Assume:
 3. A time slot is 1500 * 8 / 10G = 12us
 4. Load balancing will not happen within a flow. Each packet of the same flow takes the same routing path.
 5. Each egress port only has 1 queue, whose capacity is infinite.
+6. Every end host has to be synchronized with the controller in respect of the time
 
 Input (Remote controller collects this statistics in a period of T):
 1. n: number of hosts in the network. Host ids begin from 0.
@@ -14,7 +15,7 @@ Input (Remote controller collects this statistics in a period of T):
 4. flow_num[s][d]: number of flows from source s to destination d. Flow ids begins from 0.
 5. packet_num[s][d][f]: number of packets of flow f from source s to destination d. Packet ids begins from 0.
 6. router_choices[s][d][f]: list of list of (router id, egress port id) possibly traversed by flow f from s to d.
-7. source_timing[s][d][f][p]: Time slot id when packet p in flow f from s to d is sent out from the host.
+7. source_timing[s][d][f][p]: time slot id when packet p in flow f from s to d appeared in the source sending buffer.
 
 Goal: minimize avg flow completion time
 # Here, the flow completion time is the duration between the time when the first packet sent out to the network and the time
@@ -22,6 +23,7 @@ Goal: minimize avg flow completion time
 
 Output:
 router_prefer[r][e]: a list of (s, d, f, p) indicating the processing order of each egress port e at router r
+send_timing[s][d][f][p]: time slot id when packet p in flow f from s to d is sent out from the source.
 
 Intermediate variables:
 1. router_path[s][d][f]: list of router ids that actually traversed by flow f from s to d
@@ -33,6 +35,13 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
 
     LP = set() # a set of inequality in linear programming
 
+    # each packet must be send out of the source after entering the source buffer
+
+    for s in range(n):
+        for d in dests[s]:
+            for f in range(flow_num[s][d]):
+                LP += source_timing[s][d][f][p] <= send_timing[s][d][f][p]
+
     # the time of a packet dequeued from a former router egress port must be earlier than from a latter router egress port
 
     for s in range(n):
@@ -41,7 +50,7 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                 for p in range(packet_num[s][d][f]):
                     router_id_2 = router_path[s][d][f][0]
                     egress_port_id_2 = egress_port[s][d][f][0]
-                    LP += source_timing[s][d][f][p] + 1 <= router_timing[s][d][f][p][router_id_2][egress_port_id_2]
+                    LP += send_timing[s][d][f][p] + 1 <= router_timing[s][d][f][p][router_id_2][egress_port_id_2]
                     for r in range(len(router_path[s][d][f]) - 1):
                         router_id_1 = router_path[s][d][f][r]
                         router_id_2 = router_path[s][d][f][r + 1]
@@ -90,7 +99,7 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
 
     solve_linear_programming(LP, target)
 
-    return min_total_FCT, router_timing
+    return min_total_FCT, router_timing, send_timing
 
 Algorithm:
 
@@ -101,16 +110,16 @@ for comb in combs:
     s, d, f = comb
     path_solutions = [path_solution + [(s, d, f, rc)] for path_solution in path_solutions for rc in router_choices[s][d][f]]
 
-best_FCT, best_router_timing, best_router_path, best_egress_port = +infinity, None, None, None
+best_FCT, best_router_timing, best_router_path, best_egress_port, best_send_timing = +infinity, None, None, None, None
 
 for path_solution in path_solutions:
     for s, d, f, rc in path_solution:
         for router_id, egress_port_id in rc:
             router_path[s][d][f] += [router_id]
             egress_port[s][d][f][router_id] = egress_port_id
-    total_FCT, router_timing = solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing)
+    total_FCT, router_timing, send_timing = solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing)
     if total_FCT < best_FCT:
-        best_router_timing, best_router_path, best_egress_port = router_timing, router_path, egress_port
+        best_router_timing, best_router_path, best_egress_port, best_send_timing = router_timing, router_path, egress_port, best_send_timing
 
 # resolve the router_prefer from best_router_path
 
@@ -129,4 +138,5 @@ for r in range(m):
 
 
 # inform each router r with router_prefer[r][port_num[r]]
+# inform each source s with send_timing[s]
 '''
