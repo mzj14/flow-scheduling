@@ -14,7 +14,7 @@ Input (Remote controller collects this statistics in a period of T):
 4. port_num[r]: number of egress ports on router r.
 4. flow_num[s][d]: number of flows from source s to destination d. Flow ids begins from 0.
 5. packet_num[s][d][f]: number of packets of flow f from source s to destination d. Packet ids begins from 0.
-6. router_choices[s][d][f]: list of list of (router id, egress port id) possibly traversed by flow f from s to d.
+6. router_choices[s][d]: list of list of (router id, egress port id) possibly traversed by flow from s to d.
 7. source_timing[s][d][f][p]: time slot id when packet p in flow f from s to d appeared in the source sending buffer.
 
 Goal: minimize avg flow completion time
