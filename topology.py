@@ -52,6 +52,20 @@ def leaf_spine_net(nh_per_rack, nr_l, nr_s):
                     router_choices[(x, y)].append([(x_r, e_1), (r, e_2), (y_r, y_e)])
                     e_1 = nh_per_rack + (r - nr_l)
                     e_2 = x_r
-                    router_choices[(x, y)].append([(y_r, e_1), (r, e_2), (x_r, x_e)])
+                    router_choices[(y, x)].append([(y_r, e_1), (r, e_2), (x_r, x_e)])
 
     return n, m, port_num, router_choices
+
+
+def display(n, m, port_num, router_choices):
+    print("Create leaf-spine network...")
+    print("Totally %d hosts" % n)
+    print("Totally %d routers" % m)
+    for r in range(m):
+        print("router %d uses %s ports" % (r, port_num[r]))
+    for s in range(n):
+        for d in range(n):
+            if s != d:
+                print("Available paths from host %d to host %d" % (s, d))
+                for path in router_choices[(s, d)]:
+                    print(','.join(map(str, path)))

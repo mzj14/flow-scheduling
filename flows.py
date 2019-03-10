@@ -22,8 +22,6 @@ import math
 @Todo:
   variable packet length
 '''
-
-
 def generate(n, min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, min_packet_num):
     dests = dict()
     flow_num = dict()
@@ -64,9 +62,17 @@ def timing(flow_num, packet_num, min_start_time, max_start_time, min_interval, m
         s, d = host_key
         start_time = randint(min_start_time, max_start_time)
         for f_id in range(f_num):
-            print(packet_num[(s, d, f_id)])
             for p_id in range(packet_num[(s, d, f_id)]):
                 packet_key = (s, d, f_id, p_id)
                 source_timing[packet_key] = start_time
             start_time += randint(min_interval, max_interval)
     return source_timing
+
+
+def display(n, dests, flow_num, packet_num, source_timing):
+    print("Assign flows to pairs...")
+    for s in range(n):
+        for d in dests[s]:
+            print("Assign flows from host %d to host %d" % (s, d))
+            for f in range(flow_num[(s, d)]):
+                print("flow %d, %d packets, buffered at %d slot" % (f, packet_num[(s, d, f)], source_timing[(s, d, f, 0)]))
