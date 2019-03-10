@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import CP
+import LP
 
 '''
 @Function:
@@ -40,10 +41,12 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
         display_path_solution(n, dests, flow_num, router_path, egress_port)
 
-        total_FCT, router_timings, sender_timings = CP.solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port,
-                                                           source_timing, solution_upper_bound)
+        # total_FCT, router_timings, sender_timings = CP.solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port,
+                                                           # source_timing, solution_upper_bound)
 
-        display_optimal_scheduling(total_FCT, dests, flow_num, router_path, egress_port, router_timings, sender_timings)
+        # display_optimal_scheduling(total_FCT, dests, flow_num, router_path, egress_port, router_timings, sender_timings)
+
+        LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, solution_upper_bound)
 
         '''
         if total_FCT < best_FCT:
