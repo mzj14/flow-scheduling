@@ -13,7 +13,7 @@ def solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     sender_timing_vs.append("sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p))
-    CP.addVariable(sender_timing_vs, range(solution_upper_bound))
+    CP.addVariables(sender_timing_vs, range(solution_upper_bound))
 
     router_timing_vs = []
     for s in range(n):
@@ -23,7 +23,7 @@ def solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                     for r in router_path[(s, d, f)]:
                         e = egress_port[(s, d, f, r)]
                         router_timing_vs.append("router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, e))
-    CP.addVariable(router_timing_vs, range(solution_upper_bound))
+    CP.addVariables(router_timing_vs, range(solution_upper_bound))
 
     # Constraint I: each packet must be send out of the source after entering the source buffer
 
@@ -70,11 +70,11 @@ def solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
     # Constraint IV: the time of a router dequeues a former packet of a flow must be earlier than dequeuing a latter packet of this flow
 
     for s in range(n):
-        for d in dests[n]:
+        for d in dests[s]:
             for f in range(flow_num[(s, d)]):
                 for r in router_path[(s, d, f)]:
                     egress_port_id = egress_port[(s, d, f, r)]
-                    for p in range(len(packet_num[(s, d, f)]) - 1):
+                    for p in range(packet_num[(s, d, f)] - 1):
                         v1 = "router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, egress_port_id)
                         v2 = "router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p + 1, r, egress_port_id)
                         CP.addConstraint(lambda x1, x2: x1 + 1 <= x2, (v1, v2))
@@ -88,10 +88,11 @@ def solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
             for comb2 in combs:
                 s1, d1, f1 = comb1
                 s2, d2, f2 = comb2
-                if comb1 != comb2 and egress_port[(s1, d1, f1, r)] == egress_port[(s2, d2, f2, r)]:
+                if comb1 != comb2 and (s1, d1, f1, r) in egress_port and (s2, d2, f2, r) in egress_port and \
+                        egress_port[(s1, d1, f1, r)] == egress_port[(s2, d2, f2, r)]:
                     e = egress_port[(s1, d1, f1, r)]
-                    for p1 in packet_num[(s1, d1, f1)]:
-                        for p2 in packet_num[(s2, d2, f2)]:
+                    for p1 in range(packet_num[(s1, d1, f1)]):
+                        for p2 in range(packet_num[(s2, d2, f2)]):
                             v1 = "router_timing[(%d, %d, %d, %d, %d, %d)]" % (s1, d1, f1, p1, r, e)
                             v2 = "router_timing[(%d, %d, %d, %d, %d, %d)]" % (s2, d2, f2, p2, r, e)
                             CP.addConstraint(lambda x1, x2: x1 != x2, (v1, v2))
@@ -99,7 +100,9 @@ def solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
     # set optimization problem as minimizing FCT
 
     total_FCT = 0
-    solutions = CP.getSolutions()
+    print("Start getting solution...")
+    solutions = CP.getSolution()
+    print("Find solution!")
 
     for solution in solutions:
         for s in range(n):

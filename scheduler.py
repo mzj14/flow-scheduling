@@ -25,23 +25,33 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
                           for rc in router_choices[(s, d)]]
 
     # Find best scheduling solution by solving LP problem
-
     best_FCT, best_router_timings, best_router_path, best_egress_port, best_sender_timings = 10E8, None, None, None, None
 
-    router_path = dict()
-    egress_port = dict()
+    print("Total %d path allocations" % len(path_solutions))
+
     for path_solution in path_solutions:
+        router_path = dict()
+        egress_port = dict()
         for s, d, f, rc in path_solution:
+            router_path[(s, d, f)] = []
             for router_id, egress_port_id in rc:
-                router_path[(s, d, f)] += [router_id]
+                router_path[(s, d, f)].append(router_id)
                 egress_port[(s, d, f, router_id)] = egress_port_id
 
-        total_FCT, router_timing, sender_timing = CP.solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port,
+        display_path_solution(n, dests, flow_num, router_path, egress_port)
+
+        total_FCT, router_timings, sender_timings = CP.solve_CP(n, m, dests, flow_num, packet_num, router_path, egress_port,
                                                            source_timing, solution_upper_bound)
+
+        display_optimal_scheduling(total_FCT, dests, flow_num, router_path, egress_port, router_timings, sender_timings)
+
+        '''
         if total_FCT < best_FCT:
             best_FCT, best_router_timings, best_router_path, best_egress_port, best_sender_timings = total_FCT, router_timing, router_path, egress_port, best_sender_timing
+        '''
 
     # resolve the router_prefer from best_router_timing, best_router_path, best_egress_port
+    '''
     router_prefers = list()
     for best_router_timing in best_router_timings:
         router_prefer = dict()
@@ -63,7 +73,6 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
 
     # resolve the sender_prefer from the best_sender_timing
-
     sender_prefers = list()
     for best_sender_timing in best_sender_timings:
         sender_prefer = dict()
@@ -77,5 +86,38 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
         sender_prefers.append(sender_prefer)
 
     return router_prefers, sender_prefers
+    '''
+
+def display_path_solution(n, dests, flow_num, router_path, egress_port):
+    print("Exploring the following path allocation...")
+    for s in range(n):
+        for d in dests[s]:
+            for f in range(flow_num[(s, d)]):
+                path = [(r, egress_port[(s, d, f, r)]) for r in router_path[(s, d, f)]]
+                print("host %d to host %d, flow %d, path %s" % (s, d, f, ','.join(map(str, path))))
 
 
+def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, router_timings, sender_timings):
+    print("Find optimal solution as follows...")
+    print("total_FCT is %d" % total_FCT)
+    ans = 0
+    for router_timing in router_timings:
+        print("Optimal solution %d" % ans)
+        router_prefer = dict()
+        for s in range(n):
+            for d in dests[s]:
+                for f in range(flow_num[(s, d)]):
+                    for r in router_path[(s, d, f)]:
+                        egress_port_id = egress_port[(s, d, f, r)]
+                        if (r, egress_port) not in router_prefer:
+                            router_prefer[(r, egress_port_id)] = []
+                        for p in range(packet_num[(s, d, f)]):
+                            router_prefer[(r, egress_port_id)].append(
+                                ((s, d, f, p), router_timing[(s, d, f, p, r, egress_port_id)]))
+        for r in range(m):
+            for e in port_num[r]:
+                if (r, e) in router_prefer:
+                    router_prefer[(r, e)].sort(key=lambda tu: tu[-1])
+                    print("As for router %d egress port %d, dequeue in the following order:" % (r, e))
+                    print('->'.join(map(str, router_prefer[(r, e)])))
+        ans += 1
