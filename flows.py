@@ -2,6 +2,7 @@
 
 from random import sample, randint
 import numpy as np
+import math
 
 '''
 @Function:
@@ -36,8 +37,8 @@ def generate(n, min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, m
         # determine #flows
         for d in dests[s]:
             flow_num[(s, d)] = randint(min_flow_num, max_flow_num)
-            for f in flow_num[(s, d)]:
-                packet_num[(s, d, f)] = np.random.pareto(alpha, 1) + min_packet_num
+            for f in range(flow_num[(s, d)]):
+                packet_num[(s, d, f)] = math.floor(np.random.pareto(alpha, 1) + min_packet_num)
 
     return dests, flow_num, packet_num
 
@@ -63,6 +64,7 @@ def timing(flow_num, packet_num, min_start_time, max_start_time, min_interval, m
         s, d = host_key
         start_time = randint(min_start_time, max_start_time)
         for f_id in range(f_num):
+            print(packet_num[(s, d, f_id)])
             for p_id in range(packet_num[(s, d, f_id)]):
                 packet_key = (s, d, f_id, p_id)
                 source_timing[packet_key] = start_time

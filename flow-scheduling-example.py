@@ -15,8 +15,9 @@ if __name__ == '__main__':
     min_start_time, max_start_time, min_interval, max_interval = 0, 5, 2, 10
     source_timing = flows.timing(flow_num, packet_num, min_start_time, max_start_time, min_interval, max_interval)
 
-    scaling_factor = 2
+    scaling_factor = 100
     solution_upper_bound = (max_start_time + max_interval * max_flow_num) * scaling_factor
     router_prefers, sender_prefers = scheduler.optimal_scheduling(n, m, dests, port_num, router_choices,
                                                       flow_num, packet_num, source_timing, solution_upper_bound)
+    print(router_prefers, sender_prefers)
 
