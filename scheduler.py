@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 
-import CP
 import LP
 
 '''
@@ -16,7 +15,7 @@ import LP
   router_choices: maps between pairs and paths
   source_timing: maps between packets and timestamps
 @Return:
-
+  None
 '''
 def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing):
     path_solutions = [[]]
@@ -41,7 +40,7 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
         display_path_solution(n, dests, flow_num, router_path, egress_port)
 
-        total_FCT, router_timing, sender_timing = LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port,
+        total_FCT, router_timing, sender_timing = LP.solve_LP(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                                            source_timing)
 
         display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
