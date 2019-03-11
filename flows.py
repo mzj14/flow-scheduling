@@ -76,3 +76,4 @@ def display(n, dests, flow_num, packet_num, source_timing):
             print("Assign flows from host %d to host %d" % (s, d))
             for f in range(flow_num[(s, d)]):
                 print("flow %d, %d packets, buffered at %d slot" % (f, packet_num[(s, d, f)], source_timing[(s, d, f, 0)]))
+
