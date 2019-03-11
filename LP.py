@@ -2,6 +2,8 @@
 
 
 from pulp import *
+import parse
+
 
 def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing):
 
@@ -102,29 +104,24 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
 
     LP.solve()
 
-    print("status is %s" % LpStatus[LP.status])
+    if LpStatus[LP.status] != 'Optimal':
+        return None, None, None
+    else:
+        min_total_FCT = value(LP.objective)
+        sender_parser = parse.compile("sender_timing_({s:d},_{d:d},_{f:d},_{p:d})_")
+        router_parser = parse.compile("router_timing_({s:d},_{d:d},_{f:d},_{p:d},_{r:d},_{e:d})_")
+        sender_timing_ans = dict()
+        router_timing_ans = dict()
+        for v in LP.variables():
+            sender_result = sender_parser.parse(v.name)
+            router_result = router_parser.parse(v.name)
+            if sender_result:
+                s, d, f, p = sender_result['s'], sender_result['d'], sender_result['f'], sender_result['p']
+                sender_timing_ans[(s, d, f, p)] = v.varValue
+            if router_result:
+                s, d, f, p, r, e = router_result['s'], router_result['d'], router_result['f'], \
+                                   router_result['p'], router_result['r'], router_result['e']
+                router_timing_ans[(s, d, f, p, r, e)] = v.varValue
 
-    print("minimal avg FCT is %f" % value(LP.objective))
+    return min_total_FCT, router_timing_ans, sender_timing_ans
 
-    '''
-    for v in LP.variables():
-        print("%s = %d", (v.name, v.varValue))
-    '''
-
-    # return min_total_FCT, router_timings, sender_timings
-
-
-def format_solution(solution, n, m, dests, flow_num, packet_num, router_path, egress_port):
-    sender_timing = dict()
-    router_timing = dict()
-    for s in range(n):
-        for d in dests[s]:
-            for f in range(flow_num[(s, d)]):
-                for p in range(packet_num[(s, d, f)]):
-                    v = "sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p)
-                    sender_timing[(s, d, f, p)] = solution[v]
-                    for r in router_path[(s, d, f)]:
-                        e = egress_port[(s, d, f, r)]
-                        v = "router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, e)
-                        router_timing[(s, d, f, p, r, e)] = solution[v]
-    return router_timing, sender_timing
