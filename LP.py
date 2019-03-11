@@ -3,7 +3,7 @@
 
 from pulp import *
 
-def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, solution_upper_bound):
+def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing):
 
     LP = LpProblem("Linear Programming Problem", LpMinimize)
 
@@ -32,15 +32,14 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
     sdiff = dict()
     for s in range(n):
         combs = [(d, f, p) for d in dests[s] for f in range(flow_num[(s, d)]) for p in range(packet_num[(s, d, f)])]
-        for comb1 in combs:
-            for comb2 in combs:
-                if comb1 != comb2:
-                    d1, f1, p1 = comb1
-                    d2, f2, p2 = comb2
-                    sdiff[(s, d1, f1, p1, d2, f2, p2)] = LpVariable("sdiff[(%d, %d, %d, %d, %d, %d, %d)]" % (s, d1, f1, p1, d2, f2, p2),
-                                                                       0, 1, 'Integer')
-                    LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10E8 * sdiff[(s, d1, f1, p1, d2, f2, p2)]
-                    LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10E8 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)])
+        for i in range(len(combs)):
+            for j in range(i + 1, len(combs)):
+                d1, f1, p1 = combs[i]
+                d2, f2, p2 = combs[j]
+                sdiff[(s, d1, f1, p1, d2, f2, p2)] = LpVariable("sdiff[(%d, %d, %d, %d, %d, %d, %d)]" % (s, d1, f1, p1, d2, f2, p2),
+                                                                0, 1, 'Integer')
+                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10E8 * sdiff[(s, d1, f1, p1, d2, f2, p2)]
+                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10E8 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)])
 
     # Constraint III: the time of a packet dequeued from a former router egress port must be earlier than from a latter router egress port
 
@@ -74,12 +73,11 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
 
     ediff = dict()
     for r in range(m):
-        for comb1 in combs:
-            for comb2 in combs:
-                s1, d1, f1 = comb1
-                s2, d2, f2 = comb2
-                if comb1 != comb2 and (s1, d1, f1, r) in egress_port and (s2, d2, f2, r) in egress_port and \
-                        egress_port[(s1, d1, f1, r)] == egress_port[(s2, d2, f2, r)]:
+        for i in range(len(combs)):
+            for j in range(i + 1, len(combs)):
+                s1, d1, f1 = combs[i]
+                s2, d2, f2 = combs[j]
+                if (s1, d1, f1, r) in egress_port and (s2, d2, f2, r) in egress_port and egress_port[(s1, d1, f1, r)] == egress_port[(s2, d2, f2, r)]:
                     e = egress_port[(s1, d1, f1, r)]
                     for p1 in range(packet_num[(s1, d1, f1)]):
                         for p2 in range(packet_num[(s2, d2, f2)]):

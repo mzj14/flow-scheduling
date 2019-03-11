@@ -18,7 +18,7 @@ import LP
 @Return:
 
 '''
-def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing, solution_upper_bound):
+def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing):
     path_solutions = [[]]
     for comb in packet_num.keys():
         s, d, f = comb
@@ -46,7 +46,7 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
         # display_optimal_scheduling(total_FCT, dests, flow_num, router_path, egress_port, router_timings, sender_timings)
 
-        LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, solution_upper_bound)
+        LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing)
 
         '''
         if total_FCT < best_FCT:
