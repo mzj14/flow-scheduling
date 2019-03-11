@@ -57,10 +57,14 @@ def leaf_spine_net(nh_per_rack, nr_l, nr_s):
     return n, m, port_num, router_choices
 
 
-def display(n, m, port_num, router_choices):
+def display(n, m, nh_per_rack, nr_l, nr_s, port_num, router_choices):
     print("Create leaf-spine network...")
     print("Totally %d hosts" % n)
+    print("%d hosts per rack" % nh_per_rack)
     print("Totally %d routers" % m)
+    print("%d routers on leaf layer" % nr_l)
+    print("%d routers on spine layer" % nr_s)
+
     for r in range(m):
         print("router %d uses %s ports" % (r, port_num[r]))
     for s in range(n):
