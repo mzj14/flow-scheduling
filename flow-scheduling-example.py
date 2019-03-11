@@ -5,7 +5,7 @@ import flows
 import scheduler
 
 if __name__ == '__main__':
-    nh_per_rack, nr_l, nr_s = 5, 2, 1
+    nh_per_rack, nr_l, nr_s = 2, 2, 2
     n, m, port_num, router_choices = topology.leaf_spine_net(nh_per_rack, nr_l, nr_s)
     topology.display(n, m, port_num, router_choices)
 

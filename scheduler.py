@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import LP
+import checker
 
 '''
 @Function:
@@ -40,11 +41,15 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
         display_path_solution(n, dests, flow_num, router_path, egress_port)
 
-        total_FCT, router_timing, sender_timing = LP.solve_LP(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        total_FCT, router_timing, sender_timing = LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port,
                                                            source_timing)
 
         display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                    router_timing, sender_timing)
+
+        total_FCT = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing)
+
+        print("Employ distributed policy, FCT of distributed solution is %d" % total_FCT)
 
         # LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing)
 
