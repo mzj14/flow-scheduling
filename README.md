@@ -8,6 +8,7 @@ Centralized flow scheduling design
 * `scheduler.py`: solve LP problem based on different paths
 * `LP.py`: solve LP problem
 * `flow-scheduling-example.py`: test for centralized flow scheduler
+* `checker.py`: distributed scheduling decision as comparision to centralized flow scheduling
 
 ## Run
 ```

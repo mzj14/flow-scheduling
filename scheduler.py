@@ -30,7 +30,7 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
     print("Total %d path allocations" % len(path_solutions))
 
-    for path_solution in path_solutions:
+    for path_solution in path_solutions[:1]:
         router_path = dict()
         egress_port = dict()
         for s, d, f, rc in path_solution:
