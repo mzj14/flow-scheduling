@@ -9,6 +9,8 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
 
     LP = LpProblem("Linear Programming Problem", LpMinimize)
 
+    constraint_num = 0
+
     # Constraint I: each packet must be send out of the source after entering the source buffer
 
     sender_timing = dict()
@@ -38,10 +40,13 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
             for j in range(i + 1, len(combs)):
                 d1, f1, p1 = combs[i]
                 d2, f2, p2 = combs[j]
+
                 sdiff[(s, d1, f1, p1, d2, f2, p2)] = LpVariable("sdiff[(%d, %d, %d, %d, %d, %d, %d)]" % (s, d1, f1, p1, d2, f2, p2),
                                                                 0, 1, 'Integer')
-                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10E8 * sdiff[(s, d1, f1, p1, d2, f2, p2)]
-                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10E8 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)])
+                constraint_num += 1
+                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10E8 * sdiff[(s, d1, f1, p1, d2, f2, p2)], "Constraint %d" % constraint_num
+                constraint_num += 1
+                LP += sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10E8 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)]), "Constraint %d" % constraint_num
 
     # Constraint III: the time of a packet dequeued from a former router egress port must be earlier than from a latter router egress port
 
@@ -51,13 +56,15 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                 for p in range(packet_num[(s, d, f)]):
                     router_id_2 = router_path[(s, d, f)][0]
                     egress_port_id_2 = egress_port[(s, d, f, router_id_2)]
-                    LP += sender_timing[(s, d, f, p)] + 1 <= router_timing[(s, d, f, p, router_id_2, egress_port_id_2)]
+                    constraint_num += 1
+                    LP += sender_timing[(s, d, f, p)] + 1 <= router_timing[(s, d, f, p, router_id_2, egress_port_id_2)], "Constraint %d" % constraint_num
                     for r in range(len(router_path[(s, d, f)]) - 1):
                         router_id_1 = router_path[(s, d, f)][r]
                         router_id_2 = router_path[(s, d, f)][r + 1]
                         egress_port_id_1 = egress_port[(s, d, f, router_id_1)]
                         egress_port_id_2 = egress_port[(s, d, f, router_id_2)]
-                        LP += router_timing[(s, d, f, p, router_id_1, egress_port_id_1)] + 1 <= router_timing[(s, d, f, p, router_id_2, egress_port_id_2)]
+                        constraint_num += 1
+                        LP += router_timing[(s, d, f, p, router_id_1, egress_port_id_1)] + 1 <= router_timing[(s, d, f, p, router_id_2, egress_port_id_2)], "Constraint %d" % constraint_num
 
     # Constraint IV: the time of a router dequeues a former packet of a flow must be earlier than dequeuing a latter packet of this flow
 
@@ -67,7 +74,8 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                 for r in router_path[(s, d, f)]:
                     egress_port_id = egress_port[(s, d, f, r)]
                     for p in range(packet_num[(s, d, f)] - 1):
-                        LP += router_timing[(s, d, f, p, r, egress_port_id)] + 1 <= router_timing[(s, d, f, p + 1, r, egress_port_id)]
+                        constraint_num += 1
+                        LP += router_timing[(s, d, f, p, r, egress_port_id)] + 1 <= router_timing[(s, d, f, p + 1, r, egress_port_id)], "Constraint %d" % constraint_num
 
     # Constraint V: no two packets from different flows sharing the same egress port of a router should have the same egress timing
 
@@ -100,7 +108,7 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                 fcts.append(
                     router_timing[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1)
 
-    LP += lpSum(fcts)
+    LP += lpSum(fcts), "Object to be minimized"
 
     LP.solve()
 
