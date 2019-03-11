@@ -29,7 +29,6 @@ def readFromFile(data_file):
         dests[s] = list()
     for pair in pairs:
         s, d, fn = pair['s'], pair['d'], pair['fn']
-        print(s, d, fn)
         dests[s].append(d)
         flow_num[(s, d)] = fn
         for f in range(fn):

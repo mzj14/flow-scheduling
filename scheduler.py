@@ -43,58 +43,17 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
 
         total_FCT, router_timing, sender_timing = LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port,
                                                            source_timing)
-
+  
+        print("--------------- Global optimized solution ---------------------")
         display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                    router_timing, sender_timing)
 
-        total_FCT = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing)
+        total_FCT, router_timing, sender_timing = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing)
 
-        print("Employ distributed policy, FCT of distributed solution is %d" % total_FCT)
+        print("--------------- Distributed optimized solution ---------------------")
+        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+                                   router_timing, sender_timing)
 
-        # LP.solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing)
-
-        '''
-        if total_FCT < best_FCT:
-            best_FCT, best_router_timings, best_router_path, best_egress_port, best_sender_timings = total_FCT, router_timing, router_path, egress_port, best_sender_timing
-        '''
-
-    # resolve the router_prefer from best_router_timing, best_router_path, best_egress_port
-    '''
-    router_prefers = list()
-    for best_router_timing in best_router_timings:
-        router_prefer = dict()
-        for s in range(n):
-            for d in dests[s]:
-                for f in range(flow_num[(s, d)]):
-                    for r in best_router_path[(s, d, f)]:
-                        egress_port_id = best_egress_port[(s, d, f, r)]
-                        if (r, egress_port) not in router_prefer:
-                            router_prefer[(r, egress_port_id)] = []
-                        for p in range(packet_num[(s, d, f)]):
-                            router_prefer[(r, egress_port_id)].append(
-                                ((s, d, f, p), best_router_timing[(s, d, f, p, r, egress_port_id)]))
-        for r in range(m):
-            for e in port_num[r]:
-                if (r, e) in router_prefer:
-                    router_prefer[(r, e)].sort(key=lambda tu: tu[-1])
-        router_prefers.append(router_prefer)
-
-
-    # resolve the sender_prefer from the best_sender_timing
-    sender_prefers = list()
-    for best_sender_timing in best_sender_timings:
-        sender_prefer = dict()
-        for s in range(n):
-            sender_prefer[s] = []
-            for d in dests[s]:
-                for f in range(flow_num[(s, d)]):
-                    for p in range(packet_num[(s, d, f)]):
-                        sender_prefer[s].append((d, f, p, best_sender_timing[(s, d, f, p)]))
-            sender_prefer[s].sort(key=lambda tu: tu[-1])
-        sender_prefers.append(sender_prefer)
-
-    return router_prefers, sender_prefers
-    '''
 
 def display_path_solution(n, dests, flow_num, router_path, egress_port):
     print("Exploring the following path allocation...")

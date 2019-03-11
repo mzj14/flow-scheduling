@@ -38,6 +38,8 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
             router_buffer[r].append(list())
             heapq.heapify(router_buffer[r][e])
 
+    sender_timing_ans = dict()
+    router_timing_ans = dict()
     fly_packets = dict()
 
     while finish_count < total_count:
@@ -54,7 +56,8 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
             finish_count += len(values)
             for v in values:
                 re_size, s, d, f, p, _ = v
-                total_FCT += time_slot - source_timing[(s, d, f, p)]
+                if p == packet_num[(s, d, f)] - 1:
+                    total_FCT += time_slot - source_timing[(s, d, f, p)]
 
         fly_packets = dict()
 
@@ -70,6 +73,7 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
             if not sender_buffer[s].empty():
                 fly_packet = sender_buffer[s].get()
                 re_size, s, d, f, p, x = fly_packet
+                sender_timing_ans[(s, d, f, p)] = time_slot
                 if x < len(router_path[(s, d, f)]):
                     router_next = router_path[(s, d, f)][x]
                     egress_port_next = egress_port[(s, d, f, router_next)]
@@ -86,6 +90,7 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
                 if router_buffer[r][e]:
                     fly_packet = heapq.heappop(router_buffer[r][e])
                     re_size, s, d, f, p, x = fly_packet
+                    router_timing_ans[(s, d, f, p, r, e)] = time_slot
                     if x < len(router_path[(s, d, f)]):
                         router_next = router_path[(s, d, f)][x]
                         egress_port_next = egress_port[(s, d, f, router_next)]
@@ -98,4 +103,4 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
 
         time_slot += 1
 
-    return total_FCT
+    return total_FCT, router_timing_ans, sender_timing_ans
