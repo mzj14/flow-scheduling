@@ -120,7 +120,7 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
         for d in dests[s]:
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
-                    sender_prefer[s].append(((d, f, p), sender_timing[(s, d, f, p)]))
+                    sender_prefer[s].append(((s, d, f, p), sender_timing[(s, d, f, p)]))
         sender_prefer[s].sort(key=lambda tu: tu[-1])
         print("As for host %d, send in the following order" % s)
         print('->'.join(map(str, sender_prefer[s])))

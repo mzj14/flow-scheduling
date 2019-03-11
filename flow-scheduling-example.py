@@ -21,7 +21,7 @@ if __name__ == '__main__':
     flows.display(n, dests, flow_num, packet_num, source_timing)
     '''
 
-    flow_data_file = "backup/debug-case-1.txt"
+    flow_data_file = "backup/normal-case-1.txt"
     n, m, nh_per_rack, nr_l, nr_s, dests, port_num, router_choices, flow_num, packet_num, source_timing = case_debugger.readFromFile(flow_data_file)
     topology.display(n, m, nh_per_rack, nr_l, nr_s, port_num, router_choices)
     flows.display(n, dests, flow_num, packet_num, source_timing)
