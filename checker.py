@@ -8,7 +8,7 @@ def priority_field(s, d, f, p, flag, packet_num):
     if flag == 'total_size':
         return packet_num[(s, d, f)]
     elif flag == 'remain_size':
-        return packet_num[(s, d, f)] - p
+        return -p, packet_num[(s, d, f)] - p
     else:
         raise Exception("Unknown priority flag!")
 
@@ -28,7 +28,8 @@ def priority_field(s, d, f, p, flag, packet_num):
   total_FCT: sum of all flow completion time
 '''
 
-def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, flag):
+def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+                       source_timing, uniform_flag):
     time_slot = 0
     sender_buffer = list()
     total_FCT = 0
@@ -38,7 +39,9 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
         total_count += value
 
     for s in range(n):
-        sender_buffer.append(Queue())
+        sender_buffer.append(list())
+        if uniform_flag == 'Y':
+            heapq.heapify(sender_buffer[s])
 
     router_buffer = list()
     for r in range(m):
@@ -76,11 +79,17 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
                 for f in range(flow_num[(s, d)]):
                     for p in range(packet_num[s, d, f]):
                         if source_timing[(s, d, f, p)] == time_slot:
-                            sender_buffer[s].put((priority_field(s, d, f, p, flag, packet_num), s, d, f, p, 0))
+                            packet = (packet_num[(s, d, f)], s, d, f, p, 0)
+                            if uniform_flag == 'Y':
+                                heapq.heappush(sender_buffer[s], packet)
+                            else:
+                                sender_buffer[s].append(packet)
             # send packet to network every time slot
-            # TODO: we current send packets to the network in a FIFO way. May be it is not optimal.
-            if not sender_buffer[s].empty():
-                fly_packet = sender_buffer[s].get()
+            if len(sender_buffer[s]) > 0:
+                if uniform_flag == 'Y':
+                    fly_packet = heapq.heappop(sender_buffer[s])
+                else:
+                    fly_packet = sender_buffer[s].pop(0)
                 re_size, s, d, f, p, x = fly_packet
                 sender_timing_ans[(s, d, f, p)] = time_slot
                 if x < len(router_path[(s, d, f)]):
