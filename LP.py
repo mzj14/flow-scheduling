@@ -90,7 +90,7 @@ def solve_LP(n, m, dests, flow_num, packet_num, router_path, egress_port, source
                 if (s1, d1, f1, r) in egress_port and (s2, d2, f2, r) in egress_port and egress_port[(s1, d1, f1, r)] == egress_port[(s2, d2, f2, r)]:
                     e = egress_port[(s1, d1, f1, r)]
                     for p1 in range(packet_num[(s1, d1, f1)]):
-                        for p2 in range(packet_num[(s2, d2, f2)]):
+                        for p2 in range(p1 + 1, packet_num[(s2, d2, f2)]):
                             ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)] = LpVariable(
                                 "ediff[(%d, %d, %d, %d, %d, %d, %d, %d, %d, %d)]" % (s1, d1, f1, p1, s2, d2, f2, p2, r, e), 0, 1, 'Integer')
                             LP += router_timing[(s1, d1, f1, p1, r, e)] - router_timing[(s2, d2, f2, p2, r, e)] <= -1 + 10E8 * ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)]
