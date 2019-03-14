@@ -48,10 +48,17 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
         display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing,
                                    router_timing, sender_timing)
 
-        total_FCT, router_timing, sender_timing = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing)
+        total_FCT, router_timing, sender_timing = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, "remain_size")
 
-        print("--------------- Distributed optimized solution ---------------------")
+        print("--------------- Distributed optimized solution based on remain_size---------------------")
         display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing,
+                                   router_timing, sender_timing)
+
+        total_FCT, router_timing, sender_timing = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, "total_size")
+
+        print("--------------- Distributed optimized solution based on total_size---------------------")
+        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+                                   source_timing,
                                    router_timing, sender_timing)
 
 

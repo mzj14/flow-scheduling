@@ -3,6 +3,15 @@
 import heapq
 from queue import Queue
 
+
+def priority_field(s, d, f, p, flag, packet_num):
+    if flag == 'total_size':
+        return packet_num[(s, d, f)]
+    elif flag == 'remain_size':
+        return packet_num[(s, d, f)] - p
+    else:
+        raise Exception("Unknown priority flag!")
+
 '''
 @Function:
   Provide sender and router solution given flow statistics based on greedy choices
@@ -19,7 +28,7 @@ from queue import Queue
   total_FCT: sum of all flow completion time
 '''
 
-def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing):
+def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, flag):
     time_slot = 0
     sender_buffer = list()
     total_FCT = 0
@@ -67,7 +76,7 @@ def distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path,
                 for f in range(flow_num[(s, d)]):
                     for p in range(packet_num[s, d, f]):
                         if source_timing[(s, d, f, p)] == time_slot:
-                            sender_buffer[s].put((packet_num[s, d, f], s, d, f, p, 0))
+                            sender_buffer[s].put((priority_field(s, d, f, p, flag, packet_num), s, d, f, p, 0))
             # send packet to network every time slot
             # TODO: we current send packets to the network in a FIFO way. May be it is not optimal.
             if not sender_buffer[s].empty():
