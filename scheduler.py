@@ -45,13 +45,13 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
                                                            source_timing)
   
         print("--------------- Global optimized solution ---------------------")
-        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing,
                                    router_timing, sender_timing)
 
         total_FCT, router_timing, sender_timing = checker.distributed_policy(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing)
 
         print("--------------- Distributed optimized solution ---------------------")
-        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing,
                                    router_timing, sender_timing)
 
 
@@ -64,7 +64,7 @@ def display_path_solution(n, dests, flow_num, router_path, egress_port):
                 print("host %d to host %d, flow %d, path %s" % (s, d, f, ','.join(map(str, path))))
 
 
-def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, router_timing, sender_timing):
+def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing, sender_timing):
     print("Find optimal solution as follows...")
 
     if total_FCT is None:
@@ -79,7 +79,7 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
         for d in dests[s]:
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
-                    sender_prefer[s].append(((s, d, f, p), sender_timing[(s, d, f, p)]))
+                    sender_prefer[s].append(((s, d, f, p), int(sender_timing[(s, d, f, p)])))
         sender_prefer[s].sort(key=lambda tu: tu[-1])
         print("As for host %d, send in the following order" % s)
         print('->'.join(map(str, sender_prefer[s])))
@@ -94,10 +94,21 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
                         router_prefer[(r, egress_port_id)] = []
                     for p in range(packet_num[(s, d, f)]):
                         router_prefer[(r, egress_port_id)].append(
-                            ((s, d, f, p), router_timing[(s, d, f, p, r, egress_port_id)]))
+                            ((s, d, f, p), int(router_timing[(s, d, f, p, r, egress_port_id)])))
     for r in range(m):
         for e in range(port_num[r]):
             if (r, e) in router_prefer:
                 router_prefer[(r, e)].sort(key=lambda tu: tu[-1])
                 print("As for router %d egress port %d, dequeue in the following order:" % (r, e))
                 print('->'.join(map(str, router_prefer[(r, e)])))
+
+    for s in range(n):
+        for d in dests[s]:
+            for f in range(flow_num[(s, d)]):
+                end_packet = packet_num[(s, d, f)] - 1
+                start_t = int(source_timing[(s, d, f, 0)])
+                end_router = router_path[(s, d, f)][-1]
+                end_egress = egress_port[(s, d, f, end_router)]
+                end_t = int(router_timing[(s, d, f, end_packet, end_router, end_egress)])
+                print("As for flow (%d, %d, %d), first packet buffered at time slot %d, last packet reached receiver at \
+                      time slot %d, fct is %d" % (s, d, f, start_t, end_t + 1, end_t + 1 - start_t))
