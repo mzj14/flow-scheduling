@@ -141,11 +141,11 @@ def solve_LP_by_pulp(n, m, dests, flow_num, packet_num, router_path, egress_port
     return min_total_FCT, router_timing_ans, sender_timing_ans
 
 
-def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing):
+def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, current_best_1, current_best_2):
 
     LP = Model("flow scheduling")
 
-    LP.setParam('TimeLimit', 2*60)
+    LP.setParam('SolutionLimit', 1)
 
     constraint_num = 0
 
@@ -155,7 +155,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     sender_timing[(s, d, f, p)] = LP.addVar(name="sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p),
-                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.INTEGER)
+                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.CONTINUOUS)
 
     router_timing = dict()
     for s in range(n):
@@ -165,7 +165,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                     for r in router_path[(s, d, f)]:
                         e = egress_port[(s, d, f, r)]
                         router_timing[(s, d, f, p, r, e)] = LP.addVar(name="router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, e),
-                                                                       lb=0, vtype=GRB.INTEGER)
+                                                                       lb=0, vtype=GRB.CONTINUOUS)
 
     # Constraint I: the time of a host sends out a former packet of a flow must be earlier than sending out a latter packet of this flow
 
@@ -253,12 +253,15 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                 end_packet = packet_num[(s, d, f)] - 1
                 fcts.append(
                     router_timing[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1)
+    
+    LP.addConstr(sum(fct for fct in fcts) <= current_best_1)
+    LP.addConstr(sum(fct for fct in fcts) <= current_best_2)
 
     LP.setObjective(sum(fct for fct in fcts), GRB.MINIMIZE)
 
     LP.optimize()
 
-    if LP.status != GRB.Status.OPTIMAL:
+    if LP.status != GRB.Status.SOLUTION_LIMIT:
         return None, None, None
     else:
         min_total_FCT = LP.objval

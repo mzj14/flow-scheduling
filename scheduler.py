@@ -53,29 +53,30 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
                                    router_timing, sender_timing)
         '''
 
-        total_FCT, router_timing, sender_timing = checker.distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num,
+        total_FCT_d_t_u, router_timing, sender_timing = checker.distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num,
+                
                                                                              router_path, egress_port, source_timing, "Y")
 
         print("--------------- Distributed optimized solution based on total_size with uniform action ---------------------")
         checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing, sender_timing)
-        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        display_optimal_scheduling(total_FCT_d_t_u, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                    source_timing, router_timing, sender_timing)
 
-        total_FCT, router_timing, sender_timing = checker.distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, "N")
+        total_FCT_d_t_c, router_timing, sender_timing = checker.distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, "N")
 
         print("--------------- Distributed optimized solution based on total_size with conflict action ---------------------")
         checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing, sender_timing)
-        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        display_optimal_scheduling(total_FCT_d_t_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                    source_timing, router_timing, sender_timing)
 
-        total_FCT, router_timing, sender_timing = LP.solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path,
+        total_FCT_g, router_timing, sender_timing = LP.solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path,
                                                                         egress_port,
-                                                                        source_timing)
+                                                                        source_timing, total_FCT_d_t_u, total_FCT_d_t_c)
 
         print("--------------- Global optimized solution by gurobi---------------------")
         checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing,
                                         router_timing, sender_timing)
-        display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+        display_optimal_scheduling(total_FCT_g, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                                    source_timing,
                                    router_timing, sender_timing)
 
