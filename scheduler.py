@@ -103,7 +103,8 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
                     if (r, egress_port_id) not in router_prefer:
                         router_prefer[(r, egress_port_id)] = []
                     for p in range(packet_num[(s, d, f)]):
-                        print("sender_timing[(%d, %d, %d, %d, %d, %d)] is fractional!!!" % (s, d, f, p, r, egress_port_id))
+                        if int(router_timing[(s, d, f, p, r, egress_port_id)]) != router_timing[(s, d, f, p, r, egress_port_id)]:
+                            print("sender_timing[(%d, %d, %d, %d, %d, %d)] is fractional!!!" % (s, d, f, p, r, egress_port_id))
                         router_prefer[(r, egress_port_id)].append(
                             ((s, d, f, p), int(router_timing[(s, d, f, p, r, egress_port_id)])))
     for r in range(m):
