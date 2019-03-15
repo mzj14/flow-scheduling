@@ -121,8 +121,14 @@ def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_n
 
         time_slot += 1
 
-    check_result = check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
-                            source_timing, router_timing_ans, sender_timing_ans)
+    return total_FCT, router_timing_ans, sender_timing_ans
+
+
+def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
+                            source_timing, router_timing, sender_timing):
+
+    check_result = _check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
+                            source_timing, router_timing, sender_timing)
 
     if check_result:
         print("The following distributed solution satisfies the constraint...")
@@ -130,10 +136,8 @@ def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_n
     else:
         print("The following distributed solution does not satisfy the constraint...")
 
-    return total_FCT, router_timing_ans, sender_timing_ans
 
-
-def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
+def _check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
                             source_timing, router_timing, sender_timing):
 
     # Check if constraint I holds
@@ -144,17 +148,9 @@ def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egre
                     if sender_timing[(s, d, f, p)] < source_timing[(s, d, f, p)]:
                         print("Constraint I fails")
                         return False
-
-    # Check if constraint II holds
-    for s in range(n):
-        combs = [(d, f, p) for d in dests[s] for f in range(flow_num[(s, d)]) for p in range(packet_num[(s, d, f)])]
-        for i in range(len(combs)):
-            for j in range(i + 1, len(combs)):
-                d1, f1, p1 = combs[i]
-                d2, f2, p2 = combs[j]
-                if sender_timing[(s, d1, f1, p1)] == sender_timing[(s, d2, f2, p2)]:
-                    print("Constraint II fails")
-                    return False
+                    if p < packet_num[(s, d, f)] - 1 and sender_timing[(s, d, f, p)] + 1 > sender_timing[(s, d, f, p + 1)]:
+                        print("Constraint I fails")
+                        return False
 
     # Check if constraint III holds
     for s in range(n):
@@ -197,9 +193,20 @@ def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egre
                     e = egress_port[(s1, d1, f1, r)]
                     for p1 in range(packet_num[(s1, d1, f1)]):
                         for p2 in range(packet_num[(s2, d2, f2)]):
-                            if router_timing[(s1, d1, f1, p1, r, e)]== router_timing[(s2, d2, f2, p2, r, e)]:
+                            if router_timing[(s1, d1, f1, p1, r, e)] == router_timing[(s2, d2, f2, p2, r, e)]:
                                 print("Constraint V fails")
                                 return False
+
+    # Check if constraint II holds
+    for s in range(n):
+        combs = [(d, f, p) for d in dests[s] for f in range(flow_num[(s, d)]) for p in range(packet_num[(s, d, f)])]
+        for i in range(len(combs)):
+            for j in range(i + 1, len(combs)):
+                d1, f1, p1 = combs[i]
+                d2, f2, p2 = combs[j]
+                if sender_timing[(s, d1, f1, p1)] == sender_timing[(s, d2, f2, p2)]:
+                    print("Constraint II fails")
+                    return False
 
     # re-calculate the total FCT
     total_FCT = 0
@@ -208,7 +215,8 @@ def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egre
             for f in range(flow_num[(s, d)]):
                 end_router = router_path[(s, d, f)][-1]
                 end_port = egress_port[(s, d, f, end_router)]
-                end_packet = packet_num[(s, d, f)] - 1
-                total_FCT += router_timing[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1
+                # end_packet = packet_num[(s, d, f)] - 1
+                end_t = max([router_timing[(s, d, f, end_packet, end_router, end_port)] for end_packet in range(packet_num[(s, d, f)])])
+                total_FCT += end_t - source_timing[(s, d, f, 0)] + 1
 
     return total_FCT
