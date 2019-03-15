@@ -4,13 +4,30 @@ import heapq
 from queue import Queue
 
 
-def priority_field(s, d, f, p, flag, packet_num):
-    if flag == 'total_size':
-        return packet_num[(s, d, f)]
-    elif flag == 'remain_size':
-        return -p, packet_num[(s, d, f)] - p
+def buffer_push(buffer, min_size, packet):
+    buffer.append(packet)
+    return min(packet[0], min_size)
+
+
+def buffer_pop(buffer, min_size):
+    # print(buffer)
+    # print(min_size)
+    stop_flag = False
+    ans_packet = None
+    for i in range(len(buffer)):
+        for j in range(len(buffer) - 1, i - 1, -1):
+            if buffer[i][1] == buffer[j][1] and buffer[i][2] == buffer[j][2] and buffer[i][3] == buffer[j][3]:
+                if buffer[j][0] == min_size:
+                    ans_packet = buffer.pop(i)
+                    stop_flag = True
+                break
+        if stop_flag:
+            break
+    if ans_packet is None:
+        raise Exception("Router does not know which packet to dequeue!")
     else:
-        raise Exception("Unknown priority flag!")
+        ans_size = 10E8 if not buffer else min([p[0] for p in buffer])
+        return ans_packet, ans_size
 
 '''
 @Function:
@@ -27,6 +44,103 @@ def priority_field(s, d, f, p, flag, packet_num):
 @Return:
   total_FCT: sum of all flow completion time
 '''
+
+def distributed_policy_with_remain_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
+                       source_timing, uniform_flag):
+    time_slot = 0
+    sender_buffer = list()
+    sender_buffer_min_re_size = list()
+
+    total_FCT = 0
+
+    total_count, finish_count = 0, 0
+    for value in packet_num.values():
+        total_count += value
+
+
+    for s in range(n):
+        sender_buffer.append(list())
+        sender_buffer_min_re_size.append(10E8)
+
+    router_buffer = list()
+    router_buffer_min_re_size = list()
+    for r in range(m):
+        router_buffer.append(list())
+        router_buffer_min_re_size.append(list())
+        for e in range(port_num[r]):
+            router_buffer[r].append(list())
+            router_buffer_min_re_size[r].append(10E8)
+
+    sender_timing_ans = dict()
+    router_timing_ans = dict()
+    fly_packets = dict()
+
+    while finish_count < total_count:
+        # routers insert items for next time slot
+        for r in range(m):
+            for e in range(port_num[r]):
+                if (r, e) in fly_packets:
+                    for fly_packet in fly_packets[(r, e)]:
+                        router_buffer_min_re_size[r][e] = buffer_push(router_buffer[r][e], router_buffer_min_re_size[r][e], fly_packet)
+                    fly_packets.pop((r, e))
+
+        # fly packets arrived end hosts
+        for key, values in fly_packets.items():
+            finish_count += len(values)
+            for v in values:
+                re_size, s, d, f, p, _ = v
+                if p == packet_num[(s, d, f)] - 1:
+                    total_FCT += time_slot - source_timing[(s, d, f, p)]
+
+        fly_packets = dict()
+
+        for s in range(n):
+            # check if there are new packets from the application layer need to enter buffer
+            for d in dests[s]:
+                for f in range(flow_num[(s, d)]):
+                    for p in range(packet_num[s, d, f]):
+                        if source_timing[(s, d, f, p)] == time_slot:
+                            packet = (packet_num[(s, d, f)] - p, s, d, f, p, 0)
+                            sender_buffer_min_re_size[s] = buffer_push(sender_buffer[s], sender_buffer_min_re_size[s], packet)
+            # send packet to network every time slot
+            if len(sender_buffer[s]) > 0:
+                if uniform_flag == 'Y':
+                    fly_packet, sender_buffer_min_re_size[s] = buffer_pop(sender_buffer[s], sender_buffer_min_re_size[s])
+                else:
+                    fly_packet = sender_buffer[s].pop(0)
+                re_size, s, d, f, p, x = fly_packet
+                sender_timing_ans[(s, d, f, p)] = time_slot
+                if x < len(router_path[(s, d, f)]):
+                    router_next = router_path[(s, d, f)][x]
+                    egress_port_next = egress_port[(s, d, f, router_next)]
+                else:
+                    router_next = m + d
+                    egress_port_next = 0
+                if (router_next, egress_port_next) not in fly_packets:
+                    fly_packets[(router_next, egress_port_next)] = list()
+                fly_packets[(router_next, egress_port_next)].append((re_size, s, d, f, p, x + 1))
+
+        # routers pop items for current slot
+        for r in range(m):
+            for e in range(port_num[r]):
+                if len(router_buffer[r][e]) > 0:
+                    fly_packet, router_buffer_min_re_size[r][e] = buffer_pop(router_buffer[r][e], router_buffer_min_re_size[r][e])
+                    re_size, s, d, f, p, x = fly_packet
+                    router_timing_ans[(s, d, f, p, r, e)] = time_slot
+                    if x < len(router_path[(s, d, f)]):
+                        router_next = router_path[(s, d, f)][x]
+                        egress_port_next = egress_port[(s, d, f, router_next)]
+                    else:
+                        router_next = m + d
+                        egress_port_next = 0
+                    if (router_next, egress_port_next) not in fly_packets:
+                        fly_packets[(router_next, egress_port_next)] = list()
+                    fly_packets[(router_next, egress_port_next)].append((re_size, s, d, f, p, x + 1))
+
+        time_slot += 1
+
+    return total_FCT, router_timing_ans, sender_timing_ans
+
 
 def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
                        source_timing, uniform_flag):
