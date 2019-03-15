@@ -18,7 +18,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     sender_timing[(s, d, f, p)] = LP.addVar(name="sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p),
-                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.CONTINUOUS)
+                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.INTEGER)
 
     router_timing = dict()
     for s in range(n):
@@ -28,7 +28,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                     for r in router_path[(s, d, f)]:
                         e = egress_port[(s, d, f, r)]
                         router_timing[(s, d, f, p, r, e)] = LP.addVar(name="router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, e),
-                                                                       lb=0, vtype=GRB.CONTINUOUS)
+                                                                       lb=0, vtype=GRB.INTEGER)
 
     # Constraint I: the time of a host sends out a former packet of a flow must be earlier than sending out a latter packet of this flow
 
@@ -117,7 +117,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                 fcts.append(
                     router_timing[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1)
     
-    LP.addConstr(sum(fct for fct in fcts) <= current_best_1)
+    # LP.addConstr(sum(fct for fct in fcts) <= current_best_1)
     LP.addConstr(sum(fct for fct in fcts) <= current_best_2)
 
     LP.setObjective(sum(fct for fct in fcts), GRB.MINIMIZE)
