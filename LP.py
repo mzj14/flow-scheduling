@@ -4,7 +4,7 @@ from gurobipy import *
 import parse
 
 
-def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, current_best_1, current_best_2):
+def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, current_best):
 
     LP = Model("flow scheduling")
 
@@ -116,9 +116,8 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                 end_packet = packet_num[(s, d, f)] - 1
                 fcts.append(
                     router_timing[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1)
-    
-    # LP.addConstr(sum(fct for fct in fcts) <= current_best_1)
-    LP.addConstr(sum(fct for fct in fcts) <= current_best_2)
+
+    LP.addConstr(sum(fct for fct in fcts) <= current_best)
 
     LP.setObjective(sum(fct for fct in fcts), GRB.MINIMIZE)
 

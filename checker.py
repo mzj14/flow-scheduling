@@ -101,7 +101,10 @@ def distributed_policy_with_remain_size(n, m, dests, port_num, flow_num, packet_
                     for p in range(packet_num[s, d, f]):
                         if source_timing[(s, d, f, p)] == time_slot:
                             packet = (packet_num[(s, d, f)] - p, s, d, f, p, 0)
-                            sender_buffer_min_re_size[s] = buffer_push(sender_buffer[s], sender_buffer_min_re_size[s], packet)
+                            if uniform_flag == 'Y':
+                                sender_buffer_min_re_size[s] = buffer_push(sender_buffer[s], sender_buffer_min_re_size[s], packet)
+                            else:
+                                sender_buffer[s].append(packet)
             # send packet to network every time slot
             if len(sender_buffer[s]) > 0:
                 if uniform_flag == 'Y':
