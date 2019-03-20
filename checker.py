@@ -142,7 +142,7 @@ def distributed_policy_with_remain_size(n, m, dests, port_num, flow_num, packet_
 
         time_slot += 1
 
-    return total_FCT, router_timing_ans, sender_timing_ans
+    return total_FCT, router_timing_ans, max(router_timing_ans.values()), sender_timing_ans, max(sender_timing_ans.values())
 
 
 def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_num, router_path, egress_port,
@@ -238,7 +238,7 @@ def distributed_policy_with_total_size(n, m, dests, port_num, flow_num, packet_n
 
         time_slot += 1
 
-    return total_FCT, router_timing_ans, sender_timing_ans
+    return total_FCT, router_timing_ans, max(router_timing_ans.values()), sender_timing_ans, max(sender_timing_ans.values())
 
 
 def check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port,
