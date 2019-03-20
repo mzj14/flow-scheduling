@@ -1,0 +1,4514 @@
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 7 packets, buffered at 0 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 19 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 55
+Solution 1
+  objective value = 54
+Solution 2
+  objective value = 53
+Solution 3
+  objective value = 52
+Solution 4
+  objective value = 51
+Solution 5
+  objective value = 50
+Solution 6
+  objective value = 49
+Solution 7
+  objective value = 48
+Solution 8
+  objective value = 47
+Solution 9
+  objective value = 46
+Solution 10
+  objective value = 45
+Solution 11
+  objective value = 44
+Solution 12
+  objective value = 43
+Solution 13
+  objective value = 42
+Solution 14
+  objective value = 41
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 15
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 1 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 21
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 18 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 77
+Solution 1
+  objective value = 52
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 5 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 4 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 49
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 8 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 17
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 7 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 16
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 7 packets, buffered at 3 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 23
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 10 packets, buffered at 1 slot
+flow 2, 7 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 72
+Solution 1
+  objective value = 71
+Solution 2
+  objective value = 69
+Solution 3
+  objective value = 68
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 4
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 72
+Find optimal solution as follows...
+total_FCT is 72
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)->((1, 0, 1, 3), 6)->((1, 0, 1, 4), 7)->((1, 0, 1, 5), 8)->((1, 0, 1, 6), 9)->((1, 0, 1, 7), 10)->((1, 0, 1, 8), 11)->((1, 0, 1, 9), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)->((1, 0, 2, 3), 16)->((1, 0, 2, 4), 17)->((1, 0, 2, 5), 18)->((1, 0, 2, 6), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 1, 3), 9)->((1, 0, 1, 4), 10)->((1, 0, 1, 5), 11)->((1, 0, 1, 6), 12)->((1, 0, 1, 7), 13)->((1, 0, 1, 8), 14)->((1, 0, 1, 9), 15)->((1, 0, 2, 0), 16)->((1, 0, 2, 1), 17)->((1, 0, 2, 2), 18)->((1, 0, 2, 3), 19)->((1, 0, 2, 4), 20)->((1, 0, 2, 5), 21)->((1, 0, 2, 6), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 2, 0), 12)->((0, 1, 2, 1), 13)->((0, 1, 2, 2), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)->((1, 0, 1, 3), 7)->((1, 0, 1, 4), 8)->((1, 0, 1, 5), 9)->((1, 0, 1, 6), 10)->((1, 0, 1, 7), 11)->((1, 0, 1, 8), 12)->((1, 0, 1, 9), 13)->((1, 0, 2, 0), 14)->((1, 0, 2, 1), 15)->((1, 0, 2, 2), 16)->((1, 0, 2, 3), 17)->((1, 0, 2, 4), 18)->((1, 0, 2, 5), 19)->((1, 0, 2, 6), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)->((1, 0, 1, 3), 8)->((1, 0, 1, 4), 9)->((1, 0, 1, 5), 10)->((1, 0, 1, 6), 11)->((1, 0, 1, 7), 12)->((1, 0, 1, 8), 13)->((1, 0, 1, 9), 14)->((1, 0, 2, 0), 15)->((1, 0, 2, 1), 16)->((1, 0, 2, 2), 17)->((1, 0, 2, 3), 18)->((1, 0, 2, 4), 19)->((1, 0, 2, 5), 20)->((1, 0, 2, 6), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 2, 0), 13)->((0, 1, 2, 1), 14)->((0, 1, 2, 2), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 14, fct is 11
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 16, fct is 15
+As for flow (1, 0, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 23, fct is 20
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 69
+Find optimal solution as follows...
+total_FCT is 69
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 1, 0), 3)->((0, 1, 1, 1), 4)->((0, 1, 2, 0), 5)->((0, 1, 2, 1), 6)->((0, 1, 2, 2), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 0, 1), 10)->((0, 1, 0, 2), 11)->((0, 1, 0, 3), 12)->((0, 1, 0, 4), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 2, 0), 3)->((1, 0, 2, 1), 4)->((1, 0, 2, 2), 5)->((1, 0, 2, 3), 6)->((1, 0, 2, 4), 7)->((1, 0, 2, 5), 8)->((1, 0, 2, 6), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 1, 3), 13)->((1, 0, 1, 4), 14)->((1, 0, 1, 5), 15)->((1, 0, 1, 6), 16)->((1, 0, 1, 7), 17)->((1, 0, 1, 8), 18)->((1, 0, 1, 9), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 2, 3), 9)->((1, 0, 2, 4), 10)->((1, 0, 2, 5), 11)->((1, 0, 2, 6), 12)->((1, 0, 1, 0), 13)->((1, 0, 1, 1), 14)->((1, 0, 1, 2), 15)->((1, 0, 1, 3), 16)->((1, 0, 1, 4), 17)->((1, 0, 1, 5), 18)->((1, 0, 1, 6), 19)->((1, 0, 1, 7), 20)->((1, 0, 1, 8), 21)->((1, 0, 1, 9), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 2, 0), 6)->((0, 1, 2, 1), 7)->((0, 1, 2, 2), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 0, 1), 11)->((0, 1, 0, 2), 12)->((0, 1, 0, 3), 13)->((0, 1, 0, 4), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 0, 1), 13)->((0, 1, 0, 2), 14)->((0, 1, 0, 3), 15)->((0, 1, 0, 4), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 2, 0), 4)->((1, 0, 2, 1), 5)->((1, 0, 2, 2), 6)->((1, 0, 2, 3), 7)->((1, 0, 2, 4), 8)->((1, 0, 2, 5), 9)->((1, 0, 2, 6), 10)->((1, 0, 1, 0), 11)->((1, 0, 1, 1), 12)->((1, 0, 1, 2), 13)->((1, 0, 1, 3), 14)->((1, 0, 1, 4), 15)->((1, 0, 1, 5), 16)->((1, 0, 1, 6), 17)->((1, 0, 1, 7), 18)->((1, 0, 1, 8), 19)->((1, 0, 1, 9), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 2, 0), 5)->((1, 0, 2, 1), 6)->((1, 0, 2, 2), 7)->((1, 0, 2, 3), 8)->((1, 0, 2, 4), 9)->((1, 0, 2, 5), 10)->((1, 0, 2, 6), 11)->((1, 0, 1, 0), 12)->((1, 0, 1, 1), 13)->((1, 0, 1, 2), 14)->((1, 0, 1, 3), 15)->((1, 0, 1, 4), 16)->((1, 0, 1, 5), 17)->((1, 0, 1, 6), 18)->((1, 0, 1, 7), 19)->((1, 0, 1, 8), 20)->((1, 0, 1, 9), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 0, 1), 12)->((0, 1, 0, 2), 13)->((0, 1, 0, 3), 14)->((0, 1, 0, 4), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 17, fct is 15
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 11, fct is 6
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 23, fct is 22
+As for flow (1, 0, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 72
+Find optimal solution as follows...
+total_FCT is 72
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)->((1, 0, 1, 3), 6)->((1, 0, 1, 4), 7)->((1, 0, 1, 5), 8)->((1, 0, 1, 6), 9)->((1, 0, 1, 7), 10)->((1, 0, 1, 8), 11)->((1, 0, 1, 9), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)->((1, 0, 2, 3), 16)->((1, 0, 2, 4), 17)->((1, 0, 2, 5), 18)->((1, 0, 2, 6), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 1, 3), 9)->((1, 0, 1, 4), 10)->((1, 0, 1, 5), 11)->((1, 0, 1, 6), 12)->((1, 0, 1, 7), 13)->((1, 0, 1, 8), 14)->((1, 0, 1, 9), 15)->((1, 0, 2, 0), 16)->((1, 0, 2, 1), 17)->((1, 0, 2, 2), 18)->((1, 0, 2, 3), 19)->((1, 0, 2, 4), 20)->((1, 0, 2, 5), 21)->((1, 0, 2, 6), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 2, 0), 12)->((0, 1, 2, 1), 13)->((0, 1, 2, 2), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)->((1, 0, 1, 3), 7)->((1, 0, 1, 4), 8)->((1, 0, 1, 5), 9)->((1, 0, 1, 6), 10)->((1, 0, 1, 7), 11)->((1, 0, 1, 8), 12)->((1, 0, 1, 9), 13)->((1, 0, 2, 0), 14)->((1, 0, 2, 1), 15)->((1, 0, 2, 2), 16)->((1, 0, 2, 3), 17)->((1, 0, 2, 4), 18)->((1, 0, 2, 5), 19)->((1, 0, 2, 6), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)->((1, 0, 1, 3), 8)->((1, 0, 1, 4), 9)->((1, 0, 1, 5), 10)->((1, 0, 1, 6), 11)->((1, 0, 1, 7), 12)->((1, 0, 1, 8), 13)->((1, 0, 1, 9), 14)->((1, 0, 2, 0), 15)->((1, 0, 2, 1), 16)->((1, 0, 2, 2), 17)->((1, 0, 2, 3), 18)->((1, 0, 2, 4), 19)->((1, 0, 2, 5), 20)->((1, 0, 2, 6), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 2, 0), 13)->((0, 1, 2, 1), 14)->((0, 1, 2, 2), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 14, fct is 11
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 16, fct is 15
+As for flow (1, 0, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 23, fct is 20
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 68
+Find optimal solution as follows...
+total_FCT is 68
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 1, 0), 3)->((0, 1, 1, 1), 4)->((0, 1, 1, 2), 5)->((0, 1, 1, 3), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 0, 1), 10)->((0, 1, 0, 2), 11)->((0, 1, 0, 3), 12)->((0, 1, 0, 4), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 2, 0), 3)->((1, 0, 2, 1), 4)->((1, 0, 2, 2), 5)->((1, 0, 2, 3), 6)->((1, 0, 2, 4), 7)->((1, 0, 2, 5), 8)->((1, 0, 2, 6), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 1, 3), 13)->((1, 0, 1, 4), 14)->((1, 0, 1, 5), 15)->((1, 0, 1, 6), 16)->((1, 0, 1, 7), 17)->((1, 0, 1, 8), 18)->((1, 0, 1, 9), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 2, 3), 9)->((1, 0, 2, 4), 10)->((1, 0, 2, 5), 11)->((1, 0, 2, 6), 12)->((1, 0, 1, 0), 13)->((1, 0, 1, 1), 14)->((1, 0, 1, 2), 15)->((1, 0, 1, 3), 16)->((1, 0, 1, 4), 17)->((1, 0, 1, 5), 18)->((1, 0, 1, 6), 19)->((1, 0, 1, 7), 20)->((1, 0, 1, 8), 21)->((1, 0, 1, 9), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 0, 1), 11)->((0, 1, 0, 2), 12)->((0, 1, 0, 3), 13)->((0, 1, 0, 4), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 0, 1), 13)->((0, 1, 0, 2), 14)->((0, 1, 0, 3), 15)->((0, 1, 0, 4), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 2, 0), 4)->((1, 0, 2, 1), 5)->((1, 0, 2, 2), 6)->((1, 0, 2, 3), 7)->((1, 0, 2, 4), 8)->((1, 0, 2, 5), 9)->((1, 0, 2, 6), 10)->((1, 0, 1, 0), 11)->((1, 0, 1, 1), 12)->((1, 0, 1, 2), 13)->((1, 0, 1, 3), 14)->((1, 0, 1, 4), 15)->((1, 0, 1, 5), 16)->((1, 0, 1, 6), 17)->((1, 0, 1, 7), 18)->((1, 0, 1, 8), 19)->((1, 0, 1, 9), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 2, 0), 5)->((1, 0, 2, 1), 6)->((1, 0, 2, 2), 7)->((1, 0, 2, 3), 8)->((1, 0, 2, 4), 9)->((1, 0, 2, 5), 10)->((1, 0, 2, 6), 11)->((1, 0, 1, 0), 12)->((1, 0, 1, 1), 13)->((1, 0, 1, 2), 14)->((1, 0, 1, 3), 15)->((1, 0, 1, 4), 16)->((1, 0, 1, 5), 17)->((1, 0, 1, 6), 18)->((1, 0, 1, 7), 19)->((1, 0, 1, 8), 20)->((1, 0, 1, 9), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 0, 1), 12)->((0, 1, 0, 2), 13)->((0, 1, 0, 3), 14)->((0, 1, 0, 4), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 17, fct is 15
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 10, fct is 7
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 13, fct is 8
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 23, fct is 22
+As for flow (1, 0, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 3 slot
+flow 2, 19 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 7 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 60
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 6 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 6 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 51
+Solution 1
+  objective value = 50
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 21
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 12
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 6 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 17 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 48
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 5 packets, buffered at 3 slot
+flow 2, 4 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 42
+Solution 1
+  objective value = 41
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 10 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 37
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 35
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 11 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 6 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 60
+Solution 1
+  objective value = 52
+Solution 2
+  objective value = 50
+Solution 3
+  objective value = 49
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 4
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 60
+Find optimal solution as follows...
+total_FCT is 60
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 0, 4), 6)->((1, 0, 0, 5), 7)->((1, 0, 0, 6), 8)->((1, 0, 0, 7), 9)->((1, 0, 0, 8), 10)->((1, 0, 0, 9), 11)->((1, 0, 0, 10), 12)->((1, 0, 1, 0), 13)->((1, 0, 1, 1), 14)->((1, 0, 1, 2), 15)->((1, 0, 1, 3), 16)->((1, 0, 2, 0), 17)->((1, 0, 2, 1), 18)->((1, 0, 2, 2), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 0, 4), 9)->((1, 0, 0, 5), 10)->((1, 0, 0, 6), 11)->((1, 0, 0, 7), 12)->((1, 0, 0, 8), 13)->((1, 0, 0, 9), 14)->((1, 0, 0, 10), 15)->((1, 0, 1, 0), 16)->((1, 0, 1, 1), 17)->((1, 0, 1, 2), 18)->((1, 0, 1, 3), 19)->((1, 0, 2, 0), 20)->((1, 0, 2, 1), 21)->((1, 0, 2, 2), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 0, 4), 7)->((1, 0, 0, 5), 8)->((1, 0, 0, 6), 9)->((1, 0, 0, 7), 10)->((1, 0, 0, 8), 11)->((1, 0, 0, 9), 12)->((1, 0, 0, 10), 13)->((1, 0, 1, 0), 14)->((1, 0, 1, 1), 15)->((1, 0, 1, 2), 16)->((1, 0, 1, 3), 17)->((1, 0, 2, 0), 18)->((1, 0, 2, 1), 19)->((1, 0, 2, 2), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 0, 4), 8)->((1, 0, 0, 5), 9)->((1, 0, 0, 6), 10)->((1, 0, 0, 7), 11)->((1, 0, 0, 8), 12)->((1, 0, 0, 9), 13)->((1, 0, 0, 10), 14)->((1, 0, 1, 0), 15)->((1, 0, 1, 1), 16)->((1, 0, 1, 2), 17)->((1, 0, 1, 3), 18)->((1, 0, 2, 0), 19)->((1, 0, 2, 1), 20)->((1, 0, 2, 2), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 11, fct is 7
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 16, fct is 14
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 20, fct is 16
+As for flow (1, 0, 2), first packet buffered at time slot 6, last packet reached receiver at                       time slot 23, fct is 17
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 50
+Find optimal solution as follows...
+total_FCT is 50
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 1, 2), 9)->((1, 0, 1, 3), 10)->((1, 0, 0, 2), 11)->((1, 0, 0, 3), 12)->((1, 0, 0, 4), 13)->((1, 0, 0, 5), 14)->((1, 0, 0, 6), 15)->((1, 0, 0, 7), 16)->((1, 0, 0, 8), 17)->((1, 0, 0, 9), 18)->((1, 0, 0, 10), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 2, 0), 9)->((1, 0, 2, 1), 10)->((1, 0, 2, 2), 11)->((1, 0, 1, 2), 12)->((1, 0, 1, 3), 13)->((1, 0, 0, 2), 14)->((1, 0, 0, 3), 15)->((1, 0, 0, 4), 16)->((1, 0, 0, 5), 17)->((1, 0, 0, 6), 18)->((1, 0, 0, 7), 19)->((1, 0, 0, 8), 20)->((1, 0, 0, 9), 21)->((1, 0, 0, 10), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 2, 0), 7)->((1, 0, 2, 1), 8)->((1, 0, 2, 2), 9)->((1, 0, 1, 2), 10)->((1, 0, 1, 3), 11)->((1, 0, 0, 2), 12)->((1, 0, 0, 3), 13)->((1, 0, 0, 4), 14)->((1, 0, 0, 5), 15)->((1, 0, 0, 6), 16)->((1, 0, 0, 7), 17)->((1, 0, 0, 8), 18)->((1, 0, 0, 9), 19)->((1, 0, 0, 10), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 2, 0), 8)->((1, 0, 2, 1), 9)->((1, 0, 2, 2), 10)->((1, 0, 1, 2), 11)->((1, 0, 1, 3), 12)->((1, 0, 0, 2), 13)->((1, 0, 0, 3), 14)->((1, 0, 0, 4), 15)->((1, 0, 0, 5), 16)->((1, 0, 0, 6), 17)->((1, 0, 0, 7), 18)->((1, 0, 0, 8), 19)->((1, 0, 0, 9), 20)->((1, 0, 0, 10), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 11, fct is 7
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 23, fct is 21
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 14, fct is 10
+As for flow (1, 0, 2), first packet buffered at time slot 6, last packet reached receiver at                       time slot 12, fct is 6
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 60
+Find optimal solution as follows...
+total_FCT is 60
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 0, 4), 6)->((1, 0, 0, 5), 7)->((1, 0, 0, 6), 8)->((1, 0, 0, 7), 9)->((1, 0, 0, 8), 10)->((1, 0, 0, 9), 11)->((1, 0, 0, 10), 12)->((1, 0, 1, 0), 13)->((1, 0, 1, 1), 14)->((1, 0, 1, 2), 15)->((1, 0, 1, 3), 16)->((1, 0, 2, 0), 17)->((1, 0, 2, 1), 18)->((1, 0, 2, 2), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 0, 4), 9)->((1, 0, 0, 5), 10)->((1, 0, 0, 6), 11)->((1, 0, 0, 7), 12)->((1, 0, 0, 8), 13)->((1, 0, 0, 9), 14)->((1, 0, 0, 10), 15)->((1, 0, 1, 0), 16)->((1, 0, 1, 1), 17)->((1, 0, 1, 2), 18)->((1, 0, 1, 3), 19)->((1, 0, 2, 0), 20)->((1, 0, 2, 1), 21)->((1, 0, 2, 2), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 0, 4), 7)->((1, 0, 0, 5), 8)->((1, 0, 0, 6), 9)->((1, 0, 0, 7), 10)->((1, 0, 0, 8), 11)->((1, 0, 0, 9), 12)->((1, 0, 0, 10), 13)->((1, 0, 1, 0), 14)->((1, 0, 1, 1), 15)->((1, 0, 1, 2), 16)->((1, 0, 1, 3), 17)->((1, 0, 2, 0), 18)->((1, 0, 2, 1), 19)->((1, 0, 2, 2), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 0, 4), 8)->((1, 0, 0, 5), 9)->((1, 0, 0, 6), 10)->((1, 0, 0, 7), 11)->((1, 0, 0, 8), 12)->((1, 0, 0, 9), 13)->((1, 0, 0, 10), 14)->((1, 0, 1, 0), 15)->((1, 0, 1, 1), 16)->((1, 0, 1, 2), 17)->((1, 0, 1, 3), 18)->((1, 0, 2, 0), 19)->((1, 0, 2, 1), 20)->((1, 0, 2, 2), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 11, fct is 7
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 16, fct is 14
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 20, fct is 16
+As for flow (1, 0, 2), first packet buffered at time slot 6, last packet reached receiver at                       time slot 23, fct is 17
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 49
+Find optimal solution as follows...
+total_FCT is 49
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)->((1, 0, 1, 3), 7)->((1, 0, 2, 0), 8)->((1, 0, 2, 1), 9)->((1, 0, 2, 2), 10)->((1, 0, 0, 2), 11)->((1, 0, 0, 3), 12)->((1, 0, 0, 4), 13)->((1, 0, 0, 5), 14)->((1, 0, 0, 6), 15)->((1, 0, 0, 7), 16)->((1, 0, 0, 8), 17)->((1, 0, 0, 9), 18)->((1, 0, 0, 10), 19)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)->((1, 0, 1, 3), 10)->((1, 0, 2, 0), 11)->((1, 0, 2, 1), 12)->((1, 0, 2, 2), 13)->((1, 0, 0, 2), 14)->((1, 0, 0, 3), 15)->((1, 0, 0, 4), 16)->((1, 0, 0, 5), 17)->((1, 0, 0, 6), 18)->((1, 0, 0, 7), 19)->((1, 0, 0, 8), 20)->((1, 0, 0, 9), 21)->((1, 0, 0, 10), 22)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)->((1, 0, 1, 3), 8)->((1, 0, 2, 0), 9)->((1, 0, 2, 1), 10)->((1, 0, 2, 2), 11)->((1, 0, 0, 2), 12)->((1, 0, 0, 3), 13)->((1, 0, 0, 4), 14)->((1, 0, 0, 5), 15)->((1, 0, 0, 6), 16)->((1, 0, 0, 7), 17)->((1, 0, 0, 8), 18)->((1, 0, 0, 9), 19)->((1, 0, 0, 10), 20)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 1, 3), 9)->((1, 0, 2, 0), 10)->((1, 0, 2, 1), 11)->((1, 0, 2, 2), 12)->((1, 0, 0, 2), 13)->((1, 0, 0, 3), 14)->((1, 0, 0, 4), 15)->((1, 0, 0, 5), 16)->((1, 0, 0, 6), 17)->((1, 0, 0, 7), 18)->((1, 0, 0, 8), 19)->((1, 0, 0, 9), 20)->((1, 0, 0, 10), 21)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 11, fct is 7
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 23, fct is 21
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 11, fct is 7
+As for flow (1, 0, 2), first packet buffered at time slot 6, last packet reached receiver at                       time slot 14, fct is 8
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 9 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 55
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 6 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 27
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 8 packets, buffered at 0 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 25
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 30
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 6 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 46
+Solution 1
+  objective value = 43
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 32 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 6 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 74
+Solution 1
+  objective value = 73
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 6 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 19 packets, buffered at 2 slot
+flow 1, 7 packets, buffered at 4 slot
+flow 2, 4 packets, buffered at 6 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 109
+Solution 1
+  objective value = 84
+Solution 2
+  objective value = 83
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 3
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 6 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 43
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 43 packets, buffered at 2 slot
+flow 1, 7 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 103
+Solution 1
+  objective value = 102
+Solution 2
+  objective value = 101
+Solution 3
+  objective value = 100
+Solution 4
+  objective value = 99
+Solution 5
+  objective value = 98
+Solution 6
+  objective value = 97
+Solution 7
+  objective value = 96
+Solution 8
+  objective value = 95
+Solution 9
+  objective value = 94
+Solution 10
+  objective value = 93
+Solution 11
+  objective value = 92
+Solution 12
+  objective value = 91
+Solution 13
+  objective value = 90
+Solution 14
+  objective value = 89
+Solution 15
+  objective value = 88
+Solution 16
+  objective value = 87
+Solution 17
+  objective value = 86
+Solution 18
+  objective value = 85
+Solution 19
+  objective value = 84
+Solution 20
+  objective value = 83
+Solution 21
+  objective value = 82
+Solution 22
+  objective value = 81
+Solution 23
+  objective value = 80
+Solution 24
+  objective value = 79
+Solution 25
+  objective value = 78
+Solution 26
+  objective value = 77
+Solution 27
+  objective value = 76
+Solution 28
+  objective value = 75
+Solution 29
+  objective value = 74
+Solution 30
+  objective value = 73
+Solution 31
+  objective value = 72
+Solution 32
+  objective value = 71
+Solution 33
+  objective value = 70
+Solution 34
+  objective value = 69
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 35
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 5 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 23
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 24
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 5 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 4 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 9 packets, buffered at 6 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 56
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 1 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 40
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 5 packets, buffered at 1 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 11 packets, buffered at 3 slot
+flow 2, 5 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 63
+Solution 1
+  objective value = 62
+Solution 2
+  objective value = 61
+Solution 3
+  objective value = 60
+Solution 4
+  objective value = 59
+Solution 5
+  objective value = 58
+Solution 6
+  objective value = 57
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 7
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 6 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 39
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 5 packets, buffered at 6 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 31
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 33
+Solution 1
+  objective value = 32
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 8 packets, buffered at 1 slot
+flow 2, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 42 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 79
+Solution 1
+  objective value = 77
+Solution 2
+  objective value = 76
+Solution 3
+  objective value = 75
+Solution 4
+  objective value = 74
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 5
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 21
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 5 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 37
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 41
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 53
+Solution 1
+  objective value = 52
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 4 packets, buffered at 3 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 9 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 36
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 38
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 31
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 15 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 6 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 49
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 22 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 13 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 89
+Solution 1
+  objective value = 85
+Solution 2
+  objective value = 84
+Solution 3
+  objective value = 83
+Solution 4
+  objective value = 82
+Solution 5
+  objective value = 80
+Solution 6
+  objective value = 79
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 7
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 30
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 9 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 41
+Solution 1
+  objective value = 40
+Solution 2
+  objective value = 39
+Solution 3
+  objective value = 35
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 4
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 110 packets, buffered at 4 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 134
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 49 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 6 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 178
+Solution 1
+  objective value = 97
+Solution 2
+  objective value = 96
+Solution 3
+  objective value = 95
+Solution 4
+  objective value = 94
+Solution 5
+  objective value = 93
+Solution 6
+  objective value = 92
+Solution 7
+  objective value = 91
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 8
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 4 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 36
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 5 packets, buffered at 1 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 30
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 186 packets, buffered at 4 slot
+flow 2, 7 packets, buffered at 6 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 417
+Solution 1
+  objective value = 416
+Solution 2
+  objective value = 415
+Solution 3
+  objective value = 414
+Solution 4
+  objective value = 413
+Solution 5
+  objective value = 412
+Solution 6
+  objective value = 411
+Solution 7
+  objective value = 410
+Solution 8
+  objective value = 409
+Solution 9
+  objective value = 408
+Solution 10
+  objective value = 407
+Solution 11
+  objective value = 406
+Solution 12
+  objective value = 405
+Solution 13
+  objective value = 404
+Solution 14
+  objective value = 403
+Solution 15
+  objective value = 402
+Solution 16
+  objective value = 401
+Solution 17
+  objective value = 400
+Solution 18
+  objective value = 399
+Solution 19
+  objective value = 398
+Solution 20
+  objective value = 397
+Solution 21
+  objective value = 396
+Solution 22
+  objective value = 395
+Solution 23
+  objective value = 394
+Solution 24
+  objective value = 393
+Solution 25
+  objective value = 392
+Solution 26
+  objective value = 391
+Solution 27
+  objective value = 390
+Solution 28
+  objective value = 389
+Solution 29
+  objective value = 388
+Solution 30
+  objective value = 387
+Solution 31
+  objective value = 386
+Solution 32
+  objective value = 385
+Solution 33
+  objective value = 384
+Solution 34
+  objective value = 383
+Solution 35
+  objective value = 382
+Solution 36
+  objective value = 381
+Solution 37
+  objective value = 380
+Solution 38
+  objective value = 379
+Solution 39
+  objective value = 378
+Solution 40
+  objective value = 377
+Solution 41
+  objective value = 376
+Solution 42
+  objective value = 375
+Solution 43
+  objective value = 374
+Solution 44
+  objective value = 373
+Solution 45
+  objective value = 372
+Solution 46
+  objective value = 371
+Solution 47
+  objective value = 370
+Solution 48
+  objective value = 369
+Solution 49
+  objective value = 368
+Solution 50
+  objective value = 367
+Solution 51
+  objective value = 366
+Solution 52
+  objective value = 365
+Solution 53
+  objective value = 364
+Solution 54
+  objective value = 363
+Solution 55
+  objective value = 362
+Solution 56
+  objective value = 361
+Solution 57
+  objective value = 360
+Solution 58
+  objective value = 359
+Solution 59
+  objective value = 358
+Solution 60
+  objective value = 357
+Solution 61
+  objective value = 356
+Solution 62
+  objective value = 355
+Solution 63
+  objective value = 354
+Solution 64
+  objective value = 353
+Solution 65
+  objective value = 352
+Solution 66
+  objective value = 351
+Solution 67
+  objective value = 350
+Solution 68
+  objective value = 349
+Solution 69
+  objective value = 348
+Solution 70
+  objective value = 347
+Solution 71
+  objective value = 346
+Solution 72
+  objective value = 345
+Solution 73
+  objective value = 344
+Solution 74
+  objective value = 343
+Solution 75
+  objective value = 342
+Solution 76
+  objective value = 341
+Solution 77
+  objective value = 340
+Solution 78
+  objective value = 339
+Solution 79
+  objective value = 338
+Solution 80
+  objective value = 337
+Solution 81
+  objective value = 336
+Solution 82
+  objective value = 335
+Solution 83
+  objective value = 334
+Solution 84
+  objective value = 333
+Solution 85
+  objective value = 332
+Solution 86
+  objective value = 331
+Solution 87
+  objective value = 330
+Solution 88
+  objective value = 329
+Solution 89
+  objective value = 328
+Solution 90
+  objective value = 327
+Solution 91
+  objective value = 326
+Solution 92
+  objective value = 325
+Solution 93
+  objective value = 324
+Solution 94
+  objective value = 323
+Solution 95
+  objective value = 322
+Solution 96
+  objective value = 321
+Solution 97
+  objective value = 320
+Solution 98
+  objective value = 319
+Solution 99
+  objective value = 318
+Solution 100
+  objective value = 317
+Solution 101
+  objective value = 316
+Solution 102
+  objective value = 315
+Solution 103
+  objective value = 314
+Solution 104
+  objective value = 313
+Solution 105
+  objective value = 312
+Solution 106
+  objective value = 311
+Solution 107
+  objective value = 310
+Solution 108
+  objective value = 309
+Solution 109
+  objective value = 308
+Solution 110
+  objective value = 307
+Solution 111
+  objective value = 306
+Solution 112
+  objective value = 305
+Solution 113
+  objective value = 304
+Solution 114
+  objective value = 303
+Solution 115
+  objective value = 302
+Solution 116
+  objective value = 301
+Solution 117
+  objective value = 300
+Solution 118
+  objective value = 299
+Solution 119
+  objective value = 298
+Solution 120
+  objective value = 297
+Solution 121
+  objective value = 296
+Solution 122
+  objective value = 295
+Solution 123
+  objective value = 294
+Solution 124
+  objective value = 293
+Solution 125
+  objective value = 292
+Solution 126
+  objective value = 291
+Solution 127
+  objective value = 290
+Solution 128
+  objective value = 289
+Solution 129
+  objective value = 288
+Solution 130
+  objective value = 287
+Solution 131
+  objective value = 286
+Solution 132
+  objective value = 285
+Solution 133
+  objective value = 284
+Solution 134
+  objective value = 283
+Solution 135
+  objective value = 282
+Solution 136
+  objective value = 281
+Solution 137
+  objective value = 280
+Solution 138
+  objective value = 279
+Solution 139
+  objective value = 278
+Solution 140
+  objective value = 277
+Solution 141
+  objective value = 276
+Solution 142
+  objective value = 275
+Solution 143
+  objective value = 274
+Solution 144
+  objective value = 273
+Solution 145
+  objective value = 272
+Solution 146
+  objective value = 271
+Solution 147
+  objective value = 270
+Solution 148
+  objective value = 269
+Solution 149
+  objective value = 268
+Solution 150
+  objective value = 267
+Solution 151
+  objective value = 266
+Solution 152
+  objective value = 265
+Solution 153
+  objective value = 264
+Solution 154
+  objective value = 263
+Solution 155
+  objective value = 262
+Solution 156
+  objective value = 261
+Solution 157
+  objective value = 260
+Solution 158
+  objective value = 259
+Solution 159
+  objective value = 258
+Solution 160
+  objective value = 257
+Solution 161
+  objective value = 256
+Solution 162
+  objective value = 255
+Solution 163
+  objective value = 254
+Solution 164
+  objective value = 253
+Solution 165
+  objective value = 252
+Solution 166
+  objective value = 251
+Solution 167
+  objective value = 250
+Solution 168
+  objective value = 249
+Solution 169
+  objective value = 248
+Solution 170
+  objective value = 247
+Solution 171
+  objective value = 246
+Solution 172
+  objective value = 245
+Solution 173
+  objective value = 244
+Solution 174
+  objective value = 243
+Solution 175
+  objective value = 242
+Solution 176
+  objective value = 241
+Solution 177
+  objective value = 240
+Solution 178
+  objective value = 239
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 179
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 38
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 31
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 12
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 13
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 9 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 10 packets, buffered at 4 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 72
+Solution 1
+  objective value = 71
+Solution 2
+  objective value = 70
+Solution 3
+  objective value = 69
+Solution 4
+  objective value = 68
+Solution 5
+  objective value = 67
+Solution 6
+  objective value = 66
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 7
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 15 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 39
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 20
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 5 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 44
+Solution 1
+  objective value = 43
+Solution 2
+  objective value = 42
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 3
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 44
+Find optimal solution as follows...
+total_FCT is 44
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 1, 4), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 1, 4), 11)->((0, 1, 2, 0), 12)->((0, 1, 2, 1), 13)->((0, 1, 2, 2), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 1, 4), 12)->((0, 1, 2, 0), 13)->((0, 1, 2, 1), 14)->((0, 1, 2, 2), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 14, fct is 11
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 9, fct is 8
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 44
+Find optimal solution as follows...
+total_FCT is 44
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 2, 0), 5)->((0, 1, 2, 1), 6)->((0, 1, 2, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 2, 0), 6)->((0, 1, 2, 1), 7)->((0, 1, 2, 2), 8)->((0, 1, 0, 3), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 0, 3), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 1, 4), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 0, 3), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 1, 4), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 12, fct is 10
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 17, fct is 14
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 11, fct is 6
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 9, fct is 8
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 44
+Find optimal solution as follows...
+total_FCT is 44
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 1, 4), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 1, 4), 11)->((0, 1, 2, 0), 12)->((0, 1, 2, 1), 13)->((0, 1, 2, 2), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 1, 4), 12)->((0, 1, 2, 0), 13)->((0, 1, 2, 1), 14)->((0, 1, 2, 2), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 14, fct is 11
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 9, fct is 8
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 42
+Find optimal solution as follows...
+total_FCT is 42
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 2, 0), 6)->((0, 1, 2, 1), 7)->((0, 1, 2, 2), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)
+As for host 1, send in the following order
+((1, 0, 0, 0), 0)->((1, 0, 0, 1), 1)->((1, 0, 0, 2), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 1, 4), 16)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 1)->((1, 0, 0, 1), 2)->((1, 0, 0, 2), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 1, 4), 15)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 17, fct is 14
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 12, fct is 7
+As for flow (1, 0, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 6, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 9, fct is 8
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 6 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 25
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 10 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 15 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 69
+Solution 1
+  objective value = 62
+Solution 2
+  objective value = 61
+Solution 3
+  objective value = 57
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 4
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 13
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 6 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 39
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 5 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 6 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 38
+Solution 1
+  objective value = 37
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 12
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 14
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 32 packets, buffered at 1 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 18 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 64
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 0 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 2 slot
+flow 2, 7 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 40
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 30
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 12
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 9 packets, buffered at 1 slot
+flow 1, 4 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 4 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 71
+Solution 1
+  objective value = 67
+Solution 2
+  objective value = 66
+Solution 3
+  objective value = 65
+Solution 4
+  objective value = 64
+Solution 5
+  objective value = 63
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 6
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 71
+Find optimal solution as follows...
+total_FCT is 71
+As for host 0, send in the following order
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 0, 4), 5)->((0, 1, 0, 5), 6)->((0, 1, 0, 6), 7)->((0, 1, 0, 7), 8)->((0, 1, 0, 8), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 0, 4), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)->((1, 0, 2, 0), 10)->((1, 0, 2, 1), 11)->((1, 0, 2, 2), 12)->((1, 0, 2, 3), 13)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 0, 4), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)->((1, 0, 2, 3), 16)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 0, 5), 7)->((0, 1, 0, 6), 8)->((0, 1, 0, 7), 9)->((0, 1, 0, 8), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 2, 0), 15)->((0, 1, 2, 1), 16)->((0, 1, 2, 2), 17)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 0, 5), 9)->((0, 1, 0, 6), 10)->((0, 1, 0, 7), 11)->((0, 1, 0, 8), 12)->((0, 1, 1, 0), 13)->((0, 1, 1, 1), 14)->((0, 1, 1, 2), 15)->((0, 1, 1, 3), 16)->((0, 1, 2, 0), 17)->((0, 1, 2, 1), 18)->((0, 1, 2, 2), 19)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 0, 4), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)->((1, 0, 2, 0), 11)->((1, 0, 2, 1), 12)->((1, 0, 2, 2), 13)->((1, 0, 2, 3), 14)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 0, 4), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 2, 0), 12)->((1, 0, 2, 1), 13)->((1, 0, 2, 2), 14)->((1, 0, 2, 3), 15)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 0, 5), 8)->((0, 1, 0, 6), 9)->((0, 1, 0, 7), 10)->((0, 1, 0, 8), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 2, 0), 16)->((0, 1, 2, 1), 17)->((0, 1, 2, 2), 18)
+As for flow (0, 1, 0), first packet buffered at time slot 1, last packet reached receiver at                       time slot 13, fct is 12
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 17, fct is 14
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 20, fct is 15
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 64
+Find optimal solution as follows...
+total_FCT is 64
+As for host 0, send in the following order
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 1, 0), 3)->((0, 1, 1, 1), 4)->((0, 1, 2, 0), 5)->((0, 1, 2, 1), 6)->((0, 1, 2, 2), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 0, 2), 10)->((0, 1, 0, 3), 11)->((0, 1, 0, 4), 12)->((0, 1, 0, 5), 13)->((0, 1, 0, 6), 14)->((0, 1, 0, 7), 15)->((0, 1, 0, 8), 16)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 2, 3), 9)->((1, 0, 0, 1), 10)->((1, 0, 0, 2), 11)->((1, 0, 0, 3), 12)->((1, 0, 0, 4), 13)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 2, 0), 9)->((1, 0, 2, 1), 10)->((1, 0, 2, 2), 11)->((1, 0, 2, 3), 12)->((1, 0, 0, 1), 13)->((1, 0, 0, 2), 14)->((1, 0, 0, 3), 15)->((1, 0, 0, 4), 16)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 2, 0), 6)->((0, 1, 2, 1), 7)->((0, 1, 2, 2), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 0, 2), 11)->((0, 1, 0, 3), 12)->((0, 1, 0, 4), 13)->((0, 1, 0, 5), 14)->((0, 1, 0, 6), 15)->((0, 1, 0, 7), 16)->((0, 1, 0, 8), 17)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 0, 2), 13)->((0, 1, 0, 3), 14)->((0, 1, 0, 4), 15)->((0, 1, 0, 5), 16)->((0, 1, 0, 6), 17)->((0, 1, 0, 7), 18)->((0, 1, 0, 8), 19)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)->((1, 0, 2, 0), 7)->((1, 0, 2, 1), 8)->((1, 0, 2, 2), 9)->((1, 0, 2, 3), 10)->((1, 0, 0, 1), 11)->((1, 0, 0, 2), 12)->((1, 0, 0, 3), 13)->((1, 0, 0, 4), 14)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)->((1, 0, 2, 0), 8)->((1, 0, 2, 1), 9)->((1, 0, 2, 2), 10)->((1, 0, 2, 3), 11)->((1, 0, 0, 1), 12)->((1, 0, 0, 2), 13)->((1, 0, 0, 3), 14)->((1, 0, 0, 4), 15)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 0, 2), 12)->((0, 1, 0, 3), 13)->((0, 1, 0, 4), 14)->((0, 1, 0, 5), 15)->((0, 1, 0, 6), 16)->((0, 1, 0, 7), 17)->((0, 1, 0, 8), 18)
+As for flow (0, 1, 0), first packet buffered at time slot 1, last packet reached receiver at                       time slot 20, fct is 19
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 11, fct is 6
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 17, fct is 15
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 9, fct is 6
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 13, fct is 8
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 71
+Find optimal solution as follows...
+total_FCT is 71
+As for host 0, send in the following order
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 0, 4), 5)->((0, 1, 0, 5), 6)->((0, 1, 0, 6), 7)->((0, 1, 0, 7), 8)->((0, 1, 0, 8), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 2, 0), 14)->((0, 1, 2, 1), 15)->((0, 1, 2, 2), 16)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 0, 4), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)->((1, 0, 2, 0), 10)->((1, 0, 2, 1), 11)->((1, 0, 2, 2), 12)->((1, 0, 2, 3), 13)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 0, 4), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)->((1, 0, 2, 3), 16)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 0, 5), 7)->((0, 1, 0, 6), 8)->((0, 1, 0, 7), 9)->((0, 1, 0, 8), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 2, 0), 15)->((0, 1, 2, 1), 16)->((0, 1, 2, 2), 17)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 0, 5), 9)->((0, 1, 0, 6), 10)->((0, 1, 0, 7), 11)->((0, 1, 0, 8), 12)->((0, 1, 1, 0), 13)->((0, 1, 1, 1), 14)->((0, 1, 1, 2), 15)->((0, 1, 1, 3), 16)->((0, 1, 2, 0), 17)->((0, 1, 2, 1), 18)->((0, 1, 2, 2), 19)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 0, 4), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)->((1, 0, 2, 0), 11)->((1, 0, 2, 1), 12)->((1, 0, 2, 2), 13)->((1, 0, 2, 3), 14)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 0, 4), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 2, 0), 12)->((1, 0, 2, 1), 13)->((1, 0, 2, 2), 14)->((1, 0, 2, 3), 15)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 0, 5), 8)->((0, 1, 0, 6), 9)->((0, 1, 0, 7), 10)->((0, 1, 0, 8), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 2, 0), 16)->((0, 1, 2, 1), 17)->((0, 1, 2, 2), 18)
+As for flow (0, 1, 0), first packet buffered at time slot 1, last packet reached receiver at                       time slot 13, fct is 12
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 17, fct is 14
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 20, fct is 15
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 13, fct is 10
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 63
+Find optimal solution as follows...
+total_FCT is 63
+As for host 0, send in the following order
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 1, 0), 3)->((0, 1, 1, 1), 4)->((0, 1, 1, 2), 5)->((0, 1, 1, 3), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 0, 2), 10)->((0, 1, 0, 3), 11)->((0, 1, 0, 4), 12)->((0, 1, 0, 5), 13)->((0, 1, 0, 6), 14)->((0, 1, 0, 7), 15)->((0, 1, 0, 8), 16)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 1, 0), 3)->((1, 0, 1, 1), 4)->((1, 0, 1, 2), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 0, 4), 9)->((1, 0, 2, 0), 10)->((1, 0, 2, 1), 11)->((1, 0, 2, 2), 12)->((1, 0, 2, 3), 13)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 0, 1), 9)->((1, 0, 0, 2), 10)->((1, 0, 0, 3), 11)->((1, 0, 0, 4), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)->((1, 0, 2, 3), 16)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 0, 2), 11)->((0, 1, 0, 3), 12)->((0, 1, 0, 4), 13)->((0, 1, 0, 5), 14)->((0, 1, 0, 6), 15)->((0, 1, 0, 7), 16)->((0, 1, 0, 8), 17)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 0, 2), 13)->((0, 1, 0, 3), 14)->((0, 1, 0, 4), 15)->((0, 1, 0, 5), 16)->((0, 1, 0, 6), 17)->((0, 1, 0, 7), 18)->((0, 1, 0, 8), 19)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 1, 0), 4)->((1, 0, 1, 1), 5)->((1, 0, 1, 2), 6)->((1, 0, 0, 1), 7)->((1, 0, 0, 2), 8)->((1, 0, 0, 3), 9)->((1, 0, 0, 4), 10)->((1, 0, 2, 0), 11)->((1, 0, 2, 1), 12)->((1, 0, 2, 2), 13)->((1, 0, 2, 3), 14)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)->((1, 0, 0, 1), 8)->((1, 0, 0, 2), 9)->((1, 0, 0, 3), 10)->((1, 0, 0, 4), 11)->((1, 0, 2, 0), 12)->((1, 0, 2, 1), 13)->((1, 0, 2, 2), 14)->((1, 0, 2, 3), 15)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 0, 2), 12)->((0, 1, 0, 3), 13)->((0, 1, 0, 4), 14)->((0, 1, 0, 5), 15)->((0, 1, 0, 6), 16)->((0, 1, 0, 7), 17)->((0, 1, 0, 8), 18)
+As for flow (0, 1, 0), first packet buffered at time slot 1, last packet reached receiver at                       time slot 20, fct is 19
+As for flow (0, 1, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 10, fct is 7
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 13, fct is 8
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 13, fct is 11
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 9, fct is 6
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 17, fct is 12
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 48
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 1 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 6 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 17
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 29
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 15 packets, buffered at 1 slot
+flow 2, 9 packets, buffered at 2 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 63
+Solution 1
+  objective value = 62
+Solution 2
+  objective value = 61
+Solution 3
+  objective value = 60
+Solution 4
+  objective value = 59
+Solution 5
+  objective value = 58
+Solution 6
+  objective value = 57
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 7
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 6 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 6 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 3 slot
+flow 2, 7 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 66
+Solution 1
+  objective value = 65
+Solution 2
+  objective value = 64
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 3
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 9 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 54
+Solution 1
+  objective value = 53
+Solution 2
+  objective value = 52
+Solution 3
+  objective value = 51
+Solution 4
+  objective value = 50
+Solution 5
+  objective value = 49
+Solution 6
+  objective value = 48
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 7
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 54
+Find optimal solution as follows...
+total_FCT is 54
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 1, 4), 11)->((0, 1, 1, 5), 12)->((0, 1, 1, 6), 13)->((0, 1, 1, 7), 14)->((0, 1, 1, 8), 15)->((0, 1, 2, 0), 16)->((0, 1, 2, 1), 17)->((0, 1, 2, 2), 18)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 1, 4), 12)->((0, 1, 1, 5), 13)->((0, 1, 1, 6), 14)->((0, 1, 1, 7), 15)->((0, 1, 1, 8), 16)->((0, 1, 2, 0), 17)->((0, 1, 2, 1), 18)->((0, 1, 2, 2), 19)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)->((0, 1, 1, 5), 15)->((0, 1, 1, 6), 16)->((0, 1, 1, 7), 17)->((0, 1, 1, 8), 18)->((0, 1, 2, 0), 19)->((0, 1, 2, 1), 20)->((0, 1, 2, 2), 21)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)->((0, 1, 1, 5), 14)->((0, 1, 1, 6), 15)->((0, 1, 1, 7), 16)->((0, 1, 1, 8), 17)->((0, 1, 2, 0), 18)->((0, 1, 2, 1), 19)->((0, 1, 2, 2), 20)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 19, fct is 15
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 22, fct is 17
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 11, fct is 8
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 49
+Find optimal solution as follows...
+total_FCT is 49
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 2, 0), 5)->((0, 1, 2, 1), 6)->((0, 1, 2, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)->((0, 1, 1, 5), 15)->((0, 1, 1, 6), 16)->((0, 1, 1, 7), 17)->((0, 1, 1, 8), 18)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 2, 0), 6)->((0, 1, 2, 1), 7)->((0, 1, 2, 2), 8)->((0, 1, 0, 3), 9)->((0, 1, 0, 4), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 1, 4), 15)->((0, 1, 1, 5), 16)->((0, 1, 1, 6), 17)->((0, 1, 1, 7), 18)->((0, 1, 1, 8), 19)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 0, 3), 11)->((0, 1, 0, 4), 12)->((0, 1, 1, 0), 13)->((0, 1, 1, 1), 14)->((0, 1, 1, 2), 15)->((0, 1, 1, 3), 16)->((0, 1, 1, 4), 17)->((0, 1, 1, 5), 18)->((0, 1, 1, 6), 19)->((0, 1, 1, 7), 20)->((0, 1, 1, 8), 21)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 0, 3), 10)->((0, 1, 0, 4), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 1, 4), 16)->((0, 1, 1, 5), 17)->((0, 1, 1, 6), 18)->((0, 1, 1, 7), 19)->((0, 1, 1, 8), 20)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 13, fct is 11
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 22, fct is 18
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 11, fct is 6
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 11, fct is 8
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 54
+Find optimal solution as follows...
+total_FCT is 54
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 1, 4), 11)->((0, 1, 1, 5), 12)->((0, 1, 1, 6), 13)->((0, 1, 1, 7), 14)->((0, 1, 1, 8), 15)->((0, 1, 2, 0), 16)->((0, 1, 2, 1), 17)->((0, 1, 2, 2), 18)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 1, 0), 8)->((0, 1, 1, 1), 9)->((0, 1, 1, 2), 10)->((0, 1, 1, 3), 11)->((0, 1, 1, 4), 12)->((0, 1, 1, 5), 13)->((0, 1, 1, 6), 14)->((0, 1, 1, 7), 15)->((0, 1, 1, 8), 16)->((0, 1, 2, 0), 17)->((0, 1, 2, 1), 18)->((0, 1, 2, 2), 19)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)->((0, 1, 1, 5), 15)->((0, 1, 1, 6), 16)->((0, 1, 1, 7), 17)->((0, 1, 1, 8), 18)->((0, 1, 2, 0), 19)->((0, 1, 2, 1), 20)->((0, 1, 2, 2), 21)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 1, 0), 9)->((0, 1, 1, 1), 10)->((0, 1, 1, 2), 11)->((0, 1, 1, 3), 12)->((0, 1, 1, 4), 13)->((0, 1, 1, 5), 14)->((0, 1, 1, 6), 15)->((0, 1, 1, 7), 16)->((0, 1, 1, 8), 17)->((0, 1, 2, 0), 18)->((0, 1, 2, 1), 19)->((0, 1, 2, 2), 20)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 19, fct is 15
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 22, fct is 17
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 11, fct is 8
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 48
+Find optimal solution as follows...
+total_FCT is 48
+As for host 0, send in the following order
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 0, 4), 6)->((0, 1, 2, 0), 7)->((0, 1, 2, 1), 8)->((0, 1, 2, 2), 9)->((0, 1, 1, 0), 10)->((0, 1, 1, 1), 11)->((0, 1, 1, 2), 12)->((0, 1, 1, 3), 13)->((0, 1, 1, 4), 14)->((0, 1, 1, 5), 15)->((0, 1, 1, 6), 16)->((0, 1, 1, 7), 17)->((0, 1, 1, 8), 18)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 1, 0), 5)->((1, 0, 1, 1), 6)->((1, 0, 1, 2), 7)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 0, 4), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 1, 0), 11)->((0, 1, 1, 1), 12)->((0, 1, 1, 2), 13)->((0, 1, 1, 3), 14)->((0, 1, 1, 4), 15)->((0, 1, 1, 5), 16)->((0, 1, 1, 6), 17)->((0, 1, 1, 7), 18)->((0, 1, 1, 8), 19)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 5)->((0, 1, 0, 1), 6)->((0, 1, 0, 2), 7)->((0, 1, 0, 3), 8)->((0, 1, 0, 4), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 1, 0), 13)->((0, 1, 1, 1), 14)->((0, 1, 1, 2), 15)->((0, 1, 1, 3), 16)->((0, 1, 1, 4), 17)->((0, 1, 1, 5), 18)->((0, 1, 1, 6), 19)->((0, 1, 1, 7), 20)->((0, 1, 1, 8), 21)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 4)->((0, 1, 0, 1), 5)->((0, 1, 0, 2), 6)->((0, 1, 0, 3), 7)->((0, 1, 0, 4), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 1, 0), 12)->((0, 1, 1, 1), 13)->((0, 1, 1, 2), 14)->((0, 1, 1, 3), 15)->((0, 1, 1, 4), 16)->((0, 1, 1, 5), 17)->((0, 1, 1, 6), 18)->((0, 1, 1, 7), 19)->((0, 1, 1, 8), 20)
+As for flow (0, 1, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 10, fct is 8
+As for flow (0, 1, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 22, fct is 18
+As for flow (0, 1, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 13, fct is 8
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 8, fct is 6
+As for flow (1, 0, 1), first packet buffered at time slot 3, last packet reached receiver at                       time slot 11, fct is 8
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 29
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 1 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 30 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 57
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 3 slot
+flow 2, 8 packets, buffered at 5 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 48
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 1 slot
+flow 2, 4 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 6 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 60
+Solution 1
+  objective value = 59
+Solution 2
+  objective value = 58
+Solution 3
+  objective value = 57
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 4
+--------------- Distributed optimized solution based on total_size with conflict action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 60
+Find optimal solution as follows...
+total_FCT is 60
+As for host 0, send in the following order
+((0, 1, 0, 0), 0)->((0, 1, 0, 1), 1)->((0, 1, 0, 2), 2)->((0, 1, 0, 3), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 2, 3), 11)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 1, 3), 9)->((1, 0, 1, 4), 10)->((1, 0, 1, 5), 11)->((1, 0, 2, 0), 12)->((1, 0, 2, 1), 13)->((1, 0, 2, 2), 14)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 1, 3), 12)->((1, 0, 1, 4), 13)->((1, 0, 1, 5), 14)->((1, 0, 2, 0), 15)->((1, 0, 2, 1), 16)->((1, 0, 2, 2), 17)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 2, 3), 12)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)->((0, 1, 2, 3), 14)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)->((1, 0, 1, 3), 10)->((1, 0, 1, 4), 11)->((1, 0, 1, 5), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)->((1, 0, 1, 3), 11)->((1, 0, 1, 4), 12)->((1, 0, 1, 5), 13)->((1, 0, 2, 0), 14)->((1, 0, 2, 1), 15)->((1, 0, 2, 2), 16)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 2, 3), 13)
+As for flow (0, 1, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 7, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 11, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 15, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 15, fct is 11
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 18, fct is 13
+--------------- Distributed optimized solution based on total_size with uniform action ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 59
+Find optimal solution as follows...
+total_FCT is 59
+As for host 0, send in the following order
+((0, 1, 0, 0), 0)->((0, 1, 0, 1), 1)->((0, 1, 0, 2), 2)->((0, 1, 0, 3), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 2, 3), 11)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 2, 0), 5)->((1, 0, 2, 1), 6)->((1, 0, 2, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 1, 3), 12)->((1, 0, 1, 4), 13)->((1, 0, 1, 5), 14)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 2, 0), 8)->((1, 0, 2, 1), 9)->((1, 0, 2, 2), 10)->((1, 0, 0, 3), 11)->((1, 0, 1, 0), 12)->((1, 0, 1, 1), 13)->((1, 0, 1, 2), 14)->((1, 0, 1, 3), 15)->((1, 0, 1, 4), 16)->((1, 0, 1, 5), 17)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 2, 3), 12)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)->((0, 1, 2, 3), 14)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 0, 3), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 1, 3), 13)->((1, 0, 1, 4), 14)->((1, 0, 1, 5), 15)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 2, 0), 7)->((1, 0, 2, 1), 8)->((1, 0, 2, 2), 9)->((1, 0, 0, 3), 10)->((1, 0, 1, 0), 11)->((1, 0, 1, 1), 12)->((1, 0, 1, 2), 13)->((1, 0, 1, 3), 14)->((1, 0, 1, 4), 15)->((1, 0, 1, 5), 16)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 2, 3), 13)
+As for flow (0, 1, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 7, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 11, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 15, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 12, fct is 10
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 18, fct is 14
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 11, fct is 6
+--------------- Distributed optimized solution based on remain_size ---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 60
+Find optimal solution as follows...
+total_FCT is 60
+As for host 0, send in the following order
+((0, 1, 0, 0), 0)->((0, 1, 0, 1), 1)->((0, 1, 0, 2), 2)->((0, 1, 0, 3), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 2, 3), 11)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 1, 0), 6)->((1, 0, 1, 1), 7)->((1, 0, 1, 2), 8)->((1, 0, 1, 3), 9)->((1, 0, 1, 4), 10)->((1, 0, 1, 5), 11)->((1, 0, 2, 0), 12)->((1, 0, 2, 1), 13)->((1, 0, 2, 2), 14)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 1, 3), 12)->((1, 0, 1, 4), 13)->((1, 0, 1, 5), 14)->((1, 0, 2, 0), 15)->((1, 0, 2, 1), 16)->((1, 0, 2, 2), 17)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 2, 3), 12)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)->((0, 1, 2, 3), 14)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 1, 0), 7)->((1, 0, 1, 1), 8)->((1, 0, 1, 2), 9)->((1, 0, 1, 3), 10)->((1, 0, 1, 4), 11)->((1, 0, 1, 5), 12)->((1, 0, 2, 0), 13)->((1, 0, 2, 1), 14)->((1, 0, 2, 2), 15)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 1, 0), 8)->((1, 0, 1, 1), 9)->((1, 0, 1, 2), 10)->((1, 0, 1, 3), 11)->((1, 0, 1, 4), 12)->((1, 0, 1, 5), 13)->((1, 0, 2, 0), 14)->((1, 0, 2, 1), 15)->((1, 0, 2, 2), 16)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 2, 3), 13)
+As for flow (0, 1, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 7, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 11, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 15, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 15, fct is 11
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 18, fct is 13
+--------------- Global optimized solution by constraint programming---------------------
+The following distributed solution satisfies the constraint...
+The following distributed solution has total FCT 57
+Find optimal solution as follows...
+total_FCT is 57
+As for host 0, send in the following order
+((0, 1, 0, 0), 0)->((0, 1, 0, 1), 1)->((0, 1, 0, 2), 2)->((0, 1, 0, 3), 3)->((0, 1, 1, 0), 4)->((0, 1, 1, 1), 5)->((0, 1, 1, 2), 6)->((0, 1, 1, 3), 7)->((0, 1, 2, 0), 8)->((0, 1, 2, 1), 9)->((0, 1, 2, 2), 10)->((0, 1, 2, 3), 11)
+As for host 1, send in the following order
+((1, 0, 0, 0), 2)->((1, 0, 0, 1), 3)->((1, 0, 0, 2), 4)->((1, 0, 0, 3), 5)->((1, 0, 2, 0), 6)->((1, 0, 2, 1), 7)->((1, 0, 2, 2), 8)->((1, 0, 1, 0), 9)->((1, 0, 1, 1), 10)->((1, 0, 1, 2), 11)->((1, 0, 1, 3), 12)->((1, 0, 1, 4), 13)->((1, 0, 1, 5), 14)
+As for router 0 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 5)->((1, 0, 0, 1), 6)->((1, 0, 0, 2), 7)->((1, 0, 0, 3), 8)->((1, 0, 2, 0), 9)->((1, 0, 2, 1), 10)->((1, 0, 2, 2), 11)->((1, 0, 1, 0), 12)->((1, 0, 1, 1), 13)->((1, 0, 1, 2), 14)->((1, 0, 1, 3), 15)->((1, 0, 1, 4), 16)->((1, 0, 1, 5), 17)
+As for router 0 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 1)->((0, 1, 0, 1), 2)->((0, 1, 0, 2), 3)->((0, 1, 0, 3), 4)->((0, 1, 1, 0), 5)->((0, 1, 1, 1), 6)->((0, 1, 1, 2), 7)->((0, 1, 1, 3), 8)->((0, 1, 2, 0), 9)->((0, 1, 2, 1), 10)->((0, 1, 2, 2), 11)->((0, 1, 2, 3), 12)
+As for router 1 egress port 0, dequeue in the following order:
+((0, 1, 0, 0), 3)->((0, 1, 0, 1), 4)->((0, 1, 0, 2), 5)->((0, 1, 0, 3), 6)->((0, 1, 1, 0), 7)->((0, 1, 1, 1), 8)->((0, 1, 1, 2), 9)->((0, 1, 1, 3), 10)->((0, 1, 2, 0), 11)->((0, 1, 2, 1), 12)->((0, 1, 2, 2), 13)->((0, 1, 2, 3), 14)
+As for router 1 egress port 1, dequeue in the following order:
+((1, 0, 0, 0), 3)->((1, 0, 0, 1), 4)->((1, 0, 0, 2), 5)->((1, 0, 0, 3), 6)->((1, 0, 2, 0), 7)->((1, 0, 2, 1), 8)->((1, 0, 2, 2), 9)->((1, 0, 1, 0), 10)->((1, 0, 1, 1), 11)->((1, 0, 1, 2), 12)->((1, 0, 1, 3), 13)->((1, 0, 1, 4), 14)->((1, 0, 1, 5), 15)
+As for router 2 egress port 0, dequeue in the following order:
+((1, 0, 0, 0), 4)->((1, 0, 0, 1), 5)->((1, 0, 0, 2), 6)->((1, 0, 0, 3), 7)->((1, 0, 2, 0), 8)->((1, 0, 2, 1), 9)->((1, 0, 2, 2), 10)->((1, 0, 1, 0), 11)->((1, 0, 1, 1), 12)->((1, 0, 1, 2), 13)->((1, 0, 1, 3), 14)->((1, 0, 1, 4), 15)->((1, 0, 1, 5), 16)
+As for router 2 egress port 1, dequeue in the following order:
+((0, 1, 0, 0), 2)->((0, 1, 0, 1), 3)->((0, 1, 0, 2), 4)->((0, 1, 0, 3), 5)->((0, 1, 1, 0), 6)->((0, 1, 1, 1), 7)->((0, 1, 1, 2), 8)->((0, 1, 1, 3), 9)->((0, 1, 2, 0), 10)->((0, 1, 2, 1), 11)->((0, 1, 2, 2), 12)->((0, 1, 2, 3), 13)
+As for flow (0, 1, 0), first packet buffered at time slot 0, last packet reached receiver at                       time slot 7, fct is 7
+As for flow (0, 1, 1), first packet buffered at time slot 1, last packet reached receiver at                       time slot 11, fct is 10
+As for flow (0, 1, 2), first packet buffered at time slot 3, last packet reached receiver at                       time slot 15, fct is 12
+As for flow (1, 0, 0), first packet buffered at time slot 2, last packet reached receiver at                       time slot 9, fct is 7
+As for flow (1, 0, 1), first packet buffered at time slot 4, last packet reached receiver at                       time slot 18, fct is 14
+As for flow (1, 0, 2), first packet buffered at time slot 5, last packet reached receiver at                       time slot 12, fct is 7
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 6 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 601 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 648
+Solution 1
+  objective value = 647
+Solution 2
+  objective value = 646
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 3
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 4 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 27
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 42
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 34 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+flow 2, 4 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 140
+Solution 1
+  objective value = 88
+Solution 2
+  objective value = 87
+Solution 3
+  objective value = 86
+Solution 4
+  objective value = 85
+Solution 5
+  objective value = 84
+Solution 6
+  objective value = 83
+Solution 7
+  objective value = 82
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 8
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 5 packets, buffered at 2 slot
+flow 1, 9 packets, buffered at 3 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 38
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 5 packets, buffered at 2 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 5 packets, buffered at 1 slot
+flow 1, 15 packets, buffered at 2 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 48
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+flow 2, 3 packets, buffered at 3 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 47
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 19
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 4 packets, buffered at 4 slot
+Assign 2 flows from host 1 to host 0
+flow 0, 4 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 37
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 5 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 38
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 3 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 2 slot
+flow 1, 4 packets, buffered at 4 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 2, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 45
+Solution 1
+  objective value = 44
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 2
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 9 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 1 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+flow 2, 3 packets, buffered at 5 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 47
+Solution 1
+  objective value = 46
+Solution 2
+  objective value = 45
+Solution 3
+  objective value = 44
+Solution 4
+  objective value = 43
+Solution 5
+  objective value = 42
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 6
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 3 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 2 slot
+Assign 3 flows from host 1 to host 0
+flow 0, 3 packets, buffered at 0 slot
+flow 1, 3 packets, buffered at 2 slot
+flow 2, 3 packets, buffered at 4 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 1, path (1, 1),(2, 0),(0, 0)
+host 1 to host 0, flow 2, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 35
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1
+Create leaf-spine network...
+Totally 2 hosts
+1 hosts per rack
+Totally 3 routers
+2 routers on leaf layer
+1 routers on spine layer
+router 0 uses 2 ports
+router 1 uses 2 ports
+router 2 uses 2 ports
+Available paths from host 0 to host 1
+(0, 1),(2, 1),(1, 0)
+Available paths from host 1 to host 0
+(1, 1),(2, 0),(0, 0)
+Assign flows to pairs...
+Assign 2 flows from host 0 to host 1
+flow 0, 4 packets, buffered at 1 slot
+flow 1, 3 packets, buffered at 3 slot
+Assign 1 flows from host 1 to host 0
+flow 0, 7 packets, buffered at 0 slot
+Total 1 path allocations
+Exploring the following path allocation...
+host 0 to host 1, flow 0, path (0, 1),(2, 1),(1, 0)
+host 0 to host 1, flow 1, path (0, 1),(2, 1),(1, 0)
+host 1 to host 0, flow 0, path (1, 1),(2, 0),(0, 0)
+Start getting solution...
+Solution 0
+  objective value = 25
+Find solution!
+Status = OPTIMAL
+Number of solutions found: 1

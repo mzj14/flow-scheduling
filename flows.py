@@ -36,7 +36,10 @@ def generate(n, min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, m
         for d in dests[s]:
             flow_num[(s, d)] = randint(min_flow_num, max_flow_num)
             for f in range(flow_num[(s, d)]):
-                packet_num[(s, d, f)] = math.floor(np.random.pareto(alpha, 1) + min_packet_num)
+                if alpha > 0:
+                    packet_num[(s, d, f)] = math.floor(np.random.pareto(alpha, 1) + min_packet_num)
+                else:
+                    packet_num[(s, d, f)] = min_packet_num
 
     return dests, flow_num, packet_num
 
