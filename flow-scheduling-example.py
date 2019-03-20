@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # '''
     nh_per_rack, nr_l, nr_s = 2, 2, 1
     n, m, port_num, router_choices = topology.leaf_spine_net(nh_per_rack, nr_l, nr_s)
-    min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, min_packet_num = 1, n - 1, 1, 10, 1.2, 30
+    min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, min_packet_num = 1, n - 1, 1, 3, 1.2, 5
     dests, flow_num, packet_num = flows.generate(n, min_dest_num, max_dest_num, min_flow_num, max_flow_num,
                                                  alpha, min_packet_num)
     

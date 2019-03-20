@@ -18,7 +18,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     sender_timing[(s, d, f, p)] = LP.addVar(name="sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p),
-                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.INTEGER)
+                                                             lb=source_timing[(s, d, f, p)], vtype=GRB.CONTINUOUS)
 
     router_timing = dict()
     for s in range(n):
@@ -28,7 +28,7 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                     for r in router_path[(s, d, f)]:
                         e = egress_port[(s, d, f, r)]
                         router_timing[(s, d, f, p, r, e)] = LP.addVar(name="router_timing[(%d, %d, %d, %d, %d, %d)]" % (s, d, f, p, r, e),
-                                                                       lb=0, vtype=GRB.INTEGER)
+                                                                       lb=0, vtype=GRB.CONTINUOUS)
 
     # Constraint I: the time of a host sends out a former packet of a flow must be earlier than sending out a latter packet of this flow
 
@@ -51,9 +51,9 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                 sdiff[(s, d1, f1, p1, d2, f2, p2)] = LP.addVar(name="sdiff[(%d, %d, %d, %d, %d, %d, %d)]" % (s, d1, f1, p1, d2, f2, p2),
                                                                vtype=GRB.BINARY)
                 constraint_num += 1
-                LP.addConstr(sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10E4 * sdiff[(s, d1, f1, p1, d2, f2, p2)], "Constraint %d" % constraint_num)
+                LP.addConstr(sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] <= -1 + 10000 * sdiff[(s, d1, f1, p1, d2, f2, p2)], "Constraint %d" % constraint_num)
                 constraint_num += 1
-                LP.addConstr(sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10E4 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)]), "Constraint %d" % constraint_num)
+                LP.addConstr(sender_timing[(s, d1, f1, p1)] - sender_timing[(s, d2, f2, p2)] >= 1 - 10000 * (1 - sdiff[(s, d1, f1, p1, d2, f2, p2)]), "Constraint %d" % constraint_num)
 
     # Constraint III: the time of a packet dequeued from a former router egress port must be earlier than from a latter router egress port
 
@@ -101,9 +101,9 @@ def solve_LP_by_gurobi(n, m, dests, flow_num, packet_num, router_path, egress_po
                             ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)] = LP.addVar(name=
                                 "ediff[(%d, %d, %d, %d, %d, %d, %d, %d, %d, %d)]" % (s1, d1, f1, p1, s2, d2, f2, p2, r, e), vtype=GRB.BINARY)
                             constraint_num += 1
-                            LP.addConstr(router_timing[(s1, d1, f1, p1, r, e)] - router_timing[(s2, d2, f2, p2, r, e)] <= -1 + 10E4 * ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)], "Constraint %d" % constraint_num)
+                            LP.addConstr(router_timing[(s1, d1, f1, p1, r, e)] - router_timing[(s2, d2, f2, p2, r, e)] <= -1 + 10000 * ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)], "Constraint %d" % constraint_num)
                             constraint_num += 1
-                            LP.addConstr(router_timing[(s1, d1, f1, p1, r, e)] - router_timing[(s2, d2, f2, p2, r, e)] >= 1 - 10E4 * (1 - ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)]), "Constraint %d" % constraint_num)
+                            LP.addConstr(router_timing[(s1, d1, f1, p1, r, e)] - router_timing[(s2, d2, f2, p2, r, e)] >= 1 - 10000 * (1 - ediff[(s1, d1, f1, p1, s2, d2, f2, p2, r, e)]), "Constraint %d" % constraint_num)
 
     # set optimization problem as minimizing FCT
 
