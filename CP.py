@@ -39,7 +39,7 @@ def solve_CP(n, m, dests, port_num, flow_num, packet_num, router_path, egress_po
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     v1 = "sender_timing[(%d, %d, %d, %d)]" % (s, d, f, p)
-                    CP.addConstraint(lambda x1: source_timing[(s, d, f, p)] <= x1, (v1,))
+                    CP.addConstraint(lambda x1: source_timing[(s, d, f, p)] <= x1, v1)
 
     # Constraint I: the time of a host sends out a former packet of a flow must be earlier than sending out a latter packet of this flow
 

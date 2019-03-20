@@ -3,6 +3,7 @@
 import LP
 import CP
 import checker
+import or_tool
 
 '''
 @Function:
@@ -85,7 +86,7 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
         sender_upper_bound = max(max_sender_timing_d_t_c, max_sender_timing_d_t_u, max_sender_timing_d_r_c)
         router_upper_bound = max(max_router_timing_d_t_c, max_router_timing_d_t_u, max_router_timing_d_r_c)
         total_FCT_upper_bound = max(total_FCT_d_t_c, total_FCT_d_t_u, total_FCT_d_r_c)
-        total_FCT_constraint, router_timing, sender_timing, = CP.solve_CP(n, m, dests, port_num, flow_num, packet_num,
+        total_FCT_constraint, router_timing, sender_timing, = or_tool.solve_CP(n, m, dests, port_num, flow_num, packet_num,
                                                                           router_path, egress_port, source_timing,
                                                                           sender_upper_bound, router_upper_bound, total_FCT_upper_bound)
         checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing,
@@ -112,7 +113,6 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
 
     print("total_FCT is %d" % total_FCT)
 
-    '''
     sender_prefer = dict()
     for s in range(n):
         sender_prefer[s] = []
@@ -153,7 +153,6 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
                 start_t = int(source_timing[(s, d, f, 0)])
                 end_router = router_path[(s, d, f)][-1]
                 end_egress = egress_port[(s, d, f, end_router)]
-                end_t = int(router_timing[(s, d, f, end_packet, end_router, end_egress)])
+                end_t = router_timing[(s, d, f, end_packet, end_router, end_egress)]
                 print("As for flow (%d, %d, %d), first packet buffered at time slot %d, last packet reached receiver at \
                       time slot %d, fct is %d" % (s, d, f, start_t, end_t + 1, end_t + 1 - start_t))
-    '''

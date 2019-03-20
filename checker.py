@@ -263,10 +263,10 @@ def _check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egr
             for f in range(flow_num[(s, d)]):
                 for p in range(packet_num[(s, d, f)]):
                     if sender_timing[(s, d, f, p)] < source_timing[(s, d, f, p)]:
-                        print("Constraint I fails")
+                        print("Constraint I(1) fails")
                         return False
                     if p < packet_num[(s, d, f)] - 1 and sender_timing[(s, d, f, p)] + 1 > sender_timing[(s, d, f, p + 1)]:
-                        print("Constraint I fails")
+                        print("Constraint I(2) fails")
                         return False
 
     # Check if constraint III holds

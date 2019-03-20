@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from gurobipy import *
+# from gurobipy import *
 import parse
 
 
