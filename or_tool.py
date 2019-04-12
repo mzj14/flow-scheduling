@@ -108,13 +108,12 @@ def solve_CP(n, m, dests, port_num, flow_num, packet_num, router_path, egress_po
                 fcts.append(
                     router_timing_vs[(s, d, f, end_packet, end_router, end_port)] - source_timing[(s, d, f, 0)] + 1)
 
-    model.Minimize(sum(fcts))
+    model.Add(sum(fcts) <= FCT_upper_bound - 1)
 
     print("Start getting solution...")
     solver = cp_model.CpSolver()
     solution_printer = SolutionPrinterWithLimit(0)
-    status = solver.SolveWithSolutionCallback(model, solution_printer)
-    print("Find solution!")
+    status = solver.SeachForAllSolutions(model, solution_printer)
     print('Status = %s' % solver.StatusName(status))
     print('Number of solutions found: %i' % solution_printer.solution_count())
 
