@@ -7,8 +7,7 @@ import case_debugger
 
 
 if __name__ == '__main__':
-    '''
-    for _ in range(10):
+    for _ in range(100):
         nh_per_rack, nr_l, nr_s = 1, 2, 1
         n, m, port_num, router_choices = topology.leaf_spine_net(nh_per_rack, nr_l, nr_s)
         min_dest_num, max_dest_num, min_flow_num, max_flow_num, alpha, min_packet_num = 1, n - 1, 1, 3, 1.2, 3
@@ -22,8 +21,8 @@ if __name__ == '__main__':
         flows.display(n, dests, flow_num, packet_num, source_timing)
 
         scheduler.optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing)
-    '''
 
+    '''
     flow_data_file = "results/study-case-3/cenario.txt"
     n, m, nh_per_rack, nr_l, nr_s, dests, port_num, router_choices, flow_num, packet_num, source_timing = case_debugger.readFromFile(flow_data_file)
 
@@ -31,3 +30,4 @@ if __name__ == '__main__':
     flows.display(n, dests, flow_num, packet_num, source_timing)
 
     scheduler.optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing)
+    '''

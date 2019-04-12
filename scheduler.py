@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 
-import LP
 import checker
 import or_tool
 
