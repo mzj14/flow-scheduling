@@ -26,9 +26,6 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
         path_solutions = [path_solution + [(s, d, f, rc)] for path_solution in path_solutions
                           for rc in router_choices[(s, d)]]
 
-    # Find best scheduling solution by solving LP problem
-    # best_FCT, best_router_timings, best_router_path, best_egress_port, best_sender_timings = 10E8, None, None, None, None
-
     print("Total %d path allocations" % len(path_solutions))
 
     for path_solution in path_solutions:
@@ -52,16 +49,17 @@ def optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_n
         if total_FCT_g < min(total_FCT_d_t_c, total_FCT_d_t_u, total_FCT_d_r_c):
             print("--------------- Distributed optimized solution based on total_size with conflict action ---------------------")
             checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_c, sender_timing_d_t_c)
-            display_optimal_scheduling(total_FCT_d_t_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_c, sender_timing_d_t_c)
+            # display_optimal_scheduling(total_FCT_d_t_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_c, sender_timing_d_t_c)
+            display_optimal_scheduling_by_queue_stats(total_FCT_d_t_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_c, sender_timing_d_t_c)
             print("--------------- Distributed optimized solution based on total_size with uniform action ---------------------")
             checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_u, sender_timing_d_t_u)
-            display_optimal_scheduling(total_FCT_d_t_u, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_u, sender_timing_d_t_u)
+            display_optimal_scheduling_by_queue_stats(total_FCT_d_t_u, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_t_u, sender_timing_d_t_u)
             print("--------------- Distributed optimized solution based on remain_size ---------------------")
             checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_r_c, sender_timing_d_r_c)
-            display_optimal_scheduling(total_FCT_d_r_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_r_c, sender_timing_d_r_c)
+            display_optimal_scheduling_by_queue_stats(total_FCT_d_r_c, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_d_r_c, sender_timing_d_r_c)
             print("--------------- Global optimized solution by constraint programming---------------------")
             checker.check_linear_constraint(n, m, dests, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_g, sender_timing_g)
-            display_optimal_scheduling(total_FCT_g, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_g, sender_timing_g)
+            display_optimal_scheduling_by_queue_stats(total_FCT_g, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing_g, sender_timing_g)
 
 
 def display_path_solution(n, dests, flow_num, router_path, egress_port):
@@ -125,3 +123,71 @@ def display_optimal_scheduling(total_FCT, n, m, dests, port_num, flow_num, packe
                 end_t = router_timing[(s, d, f, end_packet, end_router, end_egress)]
                 print("As for flow (%d, %d, %d), first packet buffered at time slot %d, last packet reached receiver at \
                       time slot %d, fct is %d" % (s, d, f, start_t, end_t + 1, end_t + 1 - start_t))
+
+
+def display_optimal_scheduling_by_queue_stats(total_FCT, n, m, dests, port_num, flow_num, packet_num, router_path, egress_port, source_timing, router_timing, sender_timing):
+    schedule_duration = max(router_timing.values()) + 1
+
+    # initialize queue stats
+    queue_stats = dict()
+    dequeue_items = dict()
+    for s in range(n):
+        queue_stats[s] = list()
+        dequeue_items[s] = None
+    for r in range(m):
+        for e in range(port_num[r]):
+            queue_stats[(r, e)] = list()
+            dequeue_items[(r, e)] = None
+
+    # update queue stats every time slot
+    for time_slot_id in range(schedule_duration):
+        print("################### time_slot %d ###################" % time_slot_id)
+        # dequeue packet from host
+        for h in range(n):
+            if dequeue_items[h] is not None:
+                queue_stats[h].remove(dequeue_items[h])
+                s, d, f, p = dequeue_items[h]
+                r = router_path[(s, d, f)][0]
+                e = egress_port[(s, d, f, r)]
+                queue_stats[(r, e)].append((s, d, f, p))
+                dequeue_items[h] = None
+
+        # add new packet to host queue and decide dequeue item
+        for s in range(n):
+            for d in dests[s]:
+                for f in range(flow_num[(s, d)]):
+                    for p in range(packet_num[(s, d, f)]):
+                        if source_timing[(s, d, f, p)] == time_slot_id:
+                            queue_stats[s].append((s, d, f, p))
+                        if sender_timing[(s, d, f, p)] == time_slot_id:
+                            dequeue_items[s] = (s, d, f, p)
+
+        # dequeue packet from router
+        for r in range(m):
+            for e in range(port_num[r]):
+                if dequeue_items[(r, e)] is not None:
+                    queue_stats[(r, e)].remove(dequeue_items[(r, e)])
+                    s, d, f, p = dequeue_items[(r, e)]
+                    r_index = router_path[(s, d, f)].index(r)
+                    if r_index < len(router_path[(s, d, f)]) - 1:
+                        r_next = router_path[(s, d, f)][r_index + 1]
+                        e_next = egress_port[(s, d, f, r_next)]
+                        queue_stats[(r_next, e_next)].append((s, d, f, p))
+                    dequeue_items[(r, e)] = None
+
+        # decide dequeue item of router queue
+        for r in range(m):
+            for e in range(port_num[r]):
+                for s, d, f, p in queue_stats[(r, e)]:
+                    if router_timing[(s, d, f, p, r, e)] == time_slot_id:
+                        dequeue_items[(r, e)] = (s, d, f, p)
+
+        # display queue stats in current time slot
+        for s in range(n):
+            print("As for host %d, packets in queue are: %s" % (s, ' '.join(map(str, sorted(queue_stats[s])))))
+            print("decide to dequeue", dequeue_items[s])
+
+        for r in range(m):
+            for e in range(port_num[r]):
+                print("As for router %d, egress port %d, packets in queue are: %s" % (r, e, ' '.join(map(str, sorted(queue_stats[(r, e)])))))
+                print("decide to dequeue", dequeue_items[(r, e)])

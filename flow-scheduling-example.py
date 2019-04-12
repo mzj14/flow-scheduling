@@ -24,7 +24,7 @@ if __name__ == '__main__':
         scheduler.optimal_scheduling(n, m, dests, port_num, router_choices, flow_num, packet_num, source_timing)
     '''
 
-    flow_data_file = "results/study-case-1.txt"
+    flow_data_file = "results/study-case-3/cenario.txt"
     n, m, nh_per_rack, nr_l, nr_s, dests, port_num, router_choices, flow_num, packet_num, source_timing = case_debugger.readFromFile(flow_data_file)
 
     topology.display(n, m, nh_per_rack, nr_l, nr_s, port_num, router_choices)
